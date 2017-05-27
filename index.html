@@ -13,8 +13,8 @@
     <nav class="main-nav  main-nav--nojs">
       <button class="main-nav__toggle  main-nav__open"></button>
       <ul class="main-nav__list">
-        <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-        <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+        <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
         <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
         <li class="main-nav__item  main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
       </ul>
@@ -24,10 +24,10 @@
   <main>
     <section class="promo-block">
       <h2>Милые штучки ручной работы для дома</h2>
-      <ul class="promo-block__list">
-        <li class="promo-block__item  promo-block__interior"><a href="#">Предметы интерьера</a></li>
-        <li class="promo-block__item  promo-block__toys"><a href="#">Детские игрушки</a></li>
-      </ul>
+      <div class="promo-block__list">
+        <a class="promo-block__item  promo-block__interior" href="#">Предметы интерьера</a>
+        <a class="promo-block__item  promo-block__toys" href="#">Детские игрушки</a>
+      </div>
     </section>
     <section class="featured">
       <article class="featured__item">
@@ -88,7 +88,7 @@
           <button class="reviews__toggle  reviews__toggle--back">Назад</button>
           <button class="reviews__toggle  reviews__toggle--next">Вперед</button>
         </div>
-        <button class="btn  btn--reviews">Написать</button>
+        <a class="btn  btn--reviews">Написать</a>
       </div>
     </section>
     <section class="contacts">
@@ -108,7 +108,7 @@
         </tr>
         <div class="contacts__map"></div>
       </table>
-      <button class="btn  btn--contacts">Напишите нам</button>
+      <a class="btn  btn--contacts">Напишите нам</a>
     </section>
   </main>
 
@@ -120,6 +120,7 @@
     </p>
     <p class="page-footer__copyright">
       Разработано
+      <a class="page-footer__html-academy" href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy</a>
     </p>
   </footer>
 </body>

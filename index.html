@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка | Главная</title>
@@ -11,7 +12,7 @@
       <img src="http://placehold.it/86x35" alt="Логотип 'Mishka'" width="86" height="35">
     </a>
     <nav class="main-nav  main-nav--nojs">
-      <button class="main-nav__toggle  main-nav__open"></button>
+      <button class="main-nav__toggle  main-nav__open" type="button"></button>
       <ul class="main-nav__list">
         <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
@@ -58,7 +59,7 @@
           </div>
           <div class="featured__wrapper">
             <span class="featured__price">Цена: 990 руб.</span>
-            <button class="btn  btn--featured">Заказать</button>
+            <button class="btn  btn--featured" type="button">Заказать</button>
           </div>
         </section>
       </article>
@@ -85,8 +86,8 @@
           <span class="reviews__nickname">@misssssiskras</span>
         </div>
         <div class="reviews_wrapper-toggle">
-          <button class="reviews__toggle  reviews__toggle--back">Назад</button>
-          <button class="reviews__toggle  reviews__toggle--next">Вперед</button>
+          <button class="reviews__toggle  reviews__toggle--back" type="button">Назад</button>
+          <button class="reviews__toggle  reviews__toggle--next" type="button">Вперед</button>
         </div>
         <a class="btn  btn--reviews">Написать</a>
       </div>
@@ -95,28 +96,26 @@
       <h2 class="contacts__title">Контакты</h2>
       <table class="contacts__table">
         <tr class="contacts__row">
-          <li class="contacts__col  contacts__col--header">e-mail:</li>
-          <li class="contacts__col"><a href="#">info@mimimishkashop.ru</a></li>
+          <td class="contacts__col  contacts__col--header">e-mail:</td>
+          <td class="contacts__col"><a href="#">info@mimimishkashop.ru</a></td>
         </tr>
         <tr class="contacts__row">
-          <li class="contacts__col  contacts__col--header">адрес:</li>
-          <li class="contacts__col">
-            г. Санкт-Петербург,<br>
-            ул. Большая Конюшенная,<br>
-            д. 19/8, офис 101
-          </li>
+          <td class="contacts__col  contacts__col--header">адрес:</td>
+          <td class="contacts__col">
+            г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101
+          </td>
         </tr>
-        <div class="contacts__map"></div>
       </table>
+      <div class="contacts__map"></div>
       <a class="btn  btn--contacts">Напишите нам</a>
     </section>
   </main>
 
   <footer class="page-footer">
     <p class="social">
-      <a href="#" class="solial__link  solial__link--inst">Мы в итстаграмме</a>
-      <a href="#" class="solial__link  solial__link--fb">Мы в Фейсбуке</a>
-      <a href="#" class="solial__link  solial__link--tw">Мы в Вконтакте</a>
+      <a class="solial__link  solial__link--inst" href="#">Мы в итстаграмме</a>
+      <a class="solial__link  solial__link--fb" href="#">Мы в Фейсбуке</a>
+      <a class="solial__link  solial__link--tw" href="#">Мы в Вконтакте</a>
     </p>
     <p class="page-footer__copyright">
       Разработано

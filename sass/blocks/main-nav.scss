@@ -21,6 +21,10 @@
 
   border: none;
 
+  &--nojs {
+    display: none;
+  }
+
   &--open {
     top: -51px;
     right: 30px;
@@ -43,6 +47,14 @@
   width: 100%;
   background-color: #ffffff;
   @include clear-list();
+
+  &--nojs {
+    display: block;
+  }
+
+  &--open {
+    display: block;
+  }
 }
 
 .main-nav__item {

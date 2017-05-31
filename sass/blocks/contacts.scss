@@ -7,7 +7,7 @@
   flex-direction: column;
 
   padding-top: 36px;
-  padding-bottom: 0px;
+  padding-bottom: 39px;
 }
 
 .contacts__title {
@@ -22,7 +22,6 @@
 
 .contacts__inner {
   display: table;
-  margin-top: 26px;
   padding-right: 30px;
   padding-left: 30px;
 
@@ -32,16 +31,21 @@
 
 .contacts__item {
   display: table-row;
-  height: 60px;
 }
 
 .contacts__field {
+  padding-top: 27px;
   display: table-cell;
   width: 76px;
 }
 
 .contacts__link {
   display: table-cell;
+
+  color: #444444;
+  text-decoration: none;
+
+  border-bottom: 1px solid #62d1ba;
 }
 
 .contacts__text {

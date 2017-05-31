@@ -1,0 +1,58 @@
+.categories {
+  box-sizing: border-box;
+  width: 320px;
+  height: 206px;
+}
+
+.categories__list {
+  @include clear-list();
+}
+
+.categories__link {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  height: 103px;
+  padding: 30px;
+  padding-top: 25px;
+  padding-right: 160px;
+  padding-left: 28px;
+
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &--interior {
+    position: relative;
+
+    background-color: #63d1bb;
+
+    &::after {
+      @include absolute-pseudo-element();
+      top: 23px;
+      right: 37px;
+
+      width: 41px;
+      height: 62px;
+      background-color: #ff8800;
+    }
+  }
+
+  &--toys {
+    position: relative;
+
+    background-color: #56c3b2;
+
+    &::after {
+      @include absolute-pseudo-element();
+      top: 20px;
+      right: 27px;
+
+      width: 61px;
+      height: 61px;
+      background-color: #ff8800;
+    }
+  }
+}

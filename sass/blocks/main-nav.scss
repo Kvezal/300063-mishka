@@ -42,10 +42,7 @@
   box-sizing: border-box;
   width: 100%;
   background-color: #ffffff;
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
+  @include clear-list();
 }
 
 .main-nav__item {
@@ -84,7 +81,7 @@
 .main-nav__item a {
   display: block;
   box-sizing: border-box;
-  height: 79px;
+  min-height: 79px;
 
   font-weight: 700;
   font-size: 17px;

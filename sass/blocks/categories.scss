@@ -1,18 +1,21 @@
 .categories {
   box-sizing: border-box;
   width: 320px;
-  height: 206px;
 }
 
 .categories__list {
   @include clear-list();
 }
 
+.categories__item {
+    position: relative;
+}
+
 .categories__link {
   display: block;
   box-sizing: border-box;
   width: 320px;
-  height: 103px;
+  min-height: 103px;
   padding: 30px;
   padding-top: 25px;
   padding-right: 160px;
@@ -25,8 +28,6 @@
   text-decoration: none;
 
   &--interior {
-    position: relative;
-
     background-color: #63d1bb;
 
     &::after {
@@ -35,14 +36,12 @@
       right: 37px;
 
       width: 41px;
-      height: 62px;
+      min-height: 62px;
       background-color: #ff8800;
     }
   }
 
   &--toys {
-    position: relative;
-
     background-color: #56c3b2;
 
     &::after {
@@ -51,7 +50,7 @@
       right: 27px;
 
       width: 61px;
-      height: 61px;
+      min-height: 61px;
       background-color: #ff8800;
     }
   }

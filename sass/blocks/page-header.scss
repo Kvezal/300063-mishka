@@ -1,11 +1,12 @@
 .page-header {
   position: relative;
+  z-index: 1;
 
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 320px;
-  height: 362px;
+  min-height: 362px;
 
   background-color: #ffffff;
 }

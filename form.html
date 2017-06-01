@@ -26,7 +26,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="inner">
     <p class="promo-text">
       Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
     </p>
@@ -41,7 +41,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="order-form__item  order__item--color">
+      <fieldset class="order-form__item  order-form__item--color">
         <h2 class="order-form__title">Цвет</h2>
         <div class="order-form__group">
           <input class="order-form__input-check" type="checkbox" name="color-white" id="color-white" checked>
@@ -59,8 +59,8 @@
         </div>
       </fieldset>
 
-      <fieldset class="order-form__item">
-        <h2 class="order-form__title">ФИО</h2>
+      <fieldset class="order-form__item  order-form__item--name">
+        <h2 class="order-form__title  order-form__title--name">ФИО</h2>
         <div class="order-form__group">
           <label class="order-form__label" for="name-field">Имя:</label>
           <input class="order-form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
@@ -71,15 +71,15 @@
         </div>
       </fieldset>
 
-      <fieldset class="order-form__item">
-        <h2 class="order-form__title">Тел</h2>
+      <fieldset class="order-form__item  order-form__item--contacts">
+        <h2 class="order-form__title  order-form__title--tel">Тел</h2>
         <input class="order-form__input" type="tel" name="tel" pattern="\d{1}[' ']*\d{3}[' ']*\d{3}[' ']*\d{2}[' ']*\d{2}" placeholder="+7 ХХХ XXX ХХ ХХ*" required>
-        <h2 class="order-form__title">e-mail</h2>
+        <h2 class="order-form__title  order-form__title--email">e-mail</h2>
         <input class="order-form__input" type="email" name="email" placeholder="Ваш Email*" required>
       </fieldset>
 
       <fieldset class="order-form__item">
-        <h2 class="order-form__title">Доп</h2>
+        <h2 class="order-form__title  order-form__title--addit">Доп</h2>
         <textarea class="order-form__textarea" name="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
 

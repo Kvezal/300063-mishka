@@ -1,11 +1,15 @@
 .contacts {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
 
+  width: 320px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 36px;
   padding-bottom: 39px;
 }

@@ -1,15 +1,17 @@
 .featured {
-  position: relative;
-
-  box-sizing: border-box;
-  width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .featured__inner {
+  position: relative;
+
+  box-sizing: border-box;
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 27px;
-  padding-right: 30px;
   padding-bottom: 42px;
-  padding-left: 30px;
 }
 
 .featured__title {

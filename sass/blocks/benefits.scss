@@ -1,11 +1,13 @@
 .benefits {
-  width: 320px;
+  display: flex;
+  flex-direction: column;
 }
 
 .benefits__wrapper {
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 6px;
-  padding-right: 30px;
-  padding-left: 28px;
 }
 
 .benefits__title {

@@ -1,15 +1,14 @@
 .reviews {
-  width: 320px;
 }
 
 .reviews__wrapper {
   display: flex;
   flex-direction: column;
-
+  width: 260px;
+  margin-right: auto;
+  margin-left: auto;
   padding-top: 37px;
-  padding-right: 30px;
   padding-bottom: 50px;
-  padding-left: 30px;
 }
 
 .reviews__title {

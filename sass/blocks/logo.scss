@@ -1,8 +1,10 @@
 .logo {
+  @include margin-center();
+
   display: flex;
   flex-direction: column;
   width: 86px;
-  height: 35px;
+  height: 80;
   margin-top: 22px;
   margin-bottom: 22px;
 }

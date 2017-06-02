@@ -1,70 +1,70 @@
 .catalog-item {
+  @include margin-center();
+
   width: 260px;
   margin-top: 30px;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.catalog-item__link {
-  display: block;
-  font-size: 0;
-  line-height: 0;
-}
+  &__link {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+  }
 
-.catalog-item__link img {
-  border: none;
-}
+  &__link img {
+    border: none;
+  }
 
-.catalog-item__description {
-  padding-top: 26px;
-  padding-right: 26px;
-  padding-bottom: 27px;
-  padding-left: 27px;
+  &__description {
+    padding-top: 26px;
+    padding-right: 26px;
+    padding-bottom: 27px;
+    padding-left: 27px;
 
-  border: 1px solid #ececec;
-}
+    border: 1px solid $third-color;
+  }
 
-.catalog-item__description-header {
-  border-bottom: 1px solid #ececec;
-}
+  &__description-header {
+    border-bottom: 1px solid $third-color;
+  }
 
-.catalog-item__name {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  color: #000;
-  text-decoration: none;
-}
+  &__name {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    color: $secondary-color;
+    text-decoration: none;
+  }
 
-.catalog-item__text {
-  font-size: 13px;
-  line-height: 30px;
-  margin: 0;
-  margin-top: 5px;
-  margin-bottom: 19px;
-}
+  &__text {
+    font-size: 13px;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 5px;
+    margin-bottom: 19px;
+  }
 
-.catalog-item__description-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 21px;
-}
+  &__description-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 21px;
+  }
 
-.catalog-item__price {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  color: #000;
-}
+  &__price {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 24px;
+    color: $secondary-color;
+  }
 
-.catalog-item__buy {
-  width: 21px;
-  height: 19px;
-  margin-top: 1px;
+  &__buy {
+    width: 21px;
+    height: 19px;
+    margin-top: 1px;
 
-  font-size: 0;
-  line-height: 0;
+    font-size: 0;
+    line-height: 0;
 
-  background: #ff8800;
+    background: #ff8800;
+  }
 }

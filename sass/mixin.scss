@@ -9,3 +9,8 @@
 
   list-style: none;
 }
+
+@mixin margin-center() {
+  margin-right: auto;
+  margin-left: auto;
+}

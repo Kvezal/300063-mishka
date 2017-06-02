@@ -1,11 +1,13 @@
 .logo {
-  display: block;
+  display: flex;
+  flex-direction: column;
   width: 86px;
   height: 35px;
   margin-top: 22px;
   margin-bottom: 22px;
+
+  img {
+    border: none;
+  }
 }
 
-.logo img {
-  border: none;
-}

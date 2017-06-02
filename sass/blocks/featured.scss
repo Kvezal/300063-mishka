@@ -1,84 +1,88 @@
 .featured {
   display: flex;
   flex-direction: column;
-}
 
-.featured__inner {
-  position: relative;
 
-  box-sizing: border-box;
-  width: 260px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 27px;
-  padding-bottom: 42px;
-}
 
-.featured__title {
-  margin: 0;
-  margin-bottom: 4px;
+  &__inner {
+    @include margin-center();
 
-  font-weight: 700px;
-  font-size: 25px;
-  line-height: 30px;
-  color: #000000;
-}
+    position: relative;
 
-.featured__label {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
-  color: #63d1bb;
-  text-transform: uppercase;
-}
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 260px;
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
 
-.featured__wrapper {
-  display: flex;
-  flex-direction: column;
-}
+  &__title {
+    margin: 0;
+    margin-bottom: 4px;
 
-.featured__text {
-  margin-top: 24px;
+    font-weight: 700px;
+    font-size: 25px;
+    line-height: 30px;
+    color: $secondary-color;
+  }
 
-  font-size: 15px;
-  line-height: 24px;
-}
+  &__label {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    color: $fifth-color;
+    text-transform: uppercase;
+  }
 
-.featured__table {
-  width: 100%;
-  margin-top: 3px;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 
-  border-collapse: collapse;
-  font-size: 15px;
-  line-height: 20px;
-}
+  &__text {
+    margin-top: 24px;
 
-.featured__row {
-  border-bottom: 1px solid #ececec;
-}
+    font-size: 15px;
+    line-height: 24px;
+  }
 
-.featured__field {
-  width: 95px;
-  height: 37px;
-}
+  &__table {
+    width: 100%;
+    margin-top: 3px;
 
-.featured__image {
-  width: 260px;
-  height: 315px;
-  margin-top: 28px;
-}
+    border-collapse: collapse;
+    font-size: 15px;
+    line-height: 20px;
+  }
 
-.featured__bottom {
-  display: flex;
-  flex-direction: column;
-  margin-top: 24px;
-}
+  &__row {
+    border-bottom: 1px solid $third-color;
+  }
 
-.featured__price {
-  margin-bottom: 26px;
+  &__field {
+    width: 95px;
+    height: 37px;
+  }
 
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
-  text-align: center;
+  &__image {
+    width: 260px;
+    height: 315px;
+    margin-top: 28px;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+  }
+
+  &__price {
+    margin-bottom: 26px;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+  }
 }

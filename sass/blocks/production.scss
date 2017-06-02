@@ -1,83 +1,84 @@
 .production {
+  @include margin-center();
+
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-right: auto;
-  margin-left: auto;
-}
 
-.production__title {
-  position: relative;
+  &__title {
+    @include margin-center();
 
-  box-sizing: border-box;
-  width: 260px;
-  margin: 0;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 23px;
-  padding-bottom: 24px;
-  padding-left: 88px;
+    position: relative;
 
-  font-size: 17px;
-  line-height: 24px;
-  color: #000;
+    box-sizing: border-box;
+    width: 260px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    padding-left: 88px;
 
-  border: 1px solid #ececec;
-  border-bottom: none;
+    font-size: 17px;
+    line-height: 24px;
+    color: $secondary-color;
 
-  &::before {
-    @include absolute-pseudo-element();
-    top: 34px;
-    left: 33px;
+    border: 1px solid $third-color;
+    border-bottom: none;
 
-    width: 32px;
-    height: 22px;
+    &::before {
+      @include absolute-pseudo-element();
 
-    background-color: #ff8800;
+      top: 34px;
+      left: 33px;
+
+      width: 32px;
+      height: 22px;
+
+      background-color: #ff8800;
+    }
   }
-}
 
-.production__video {
-  position: relative;
-  width: 260px;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-}
+  &__video {
+    @include margin-center();
 
-.production__play {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+    position: relative;
+    width: 260px;
+    height: 150px;
+  }
 
-  padding: 0;
-  transform: translate(-50%, -50%);
-  background-color: transparent;
-  border: none;
-}
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 
-.production__description {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 260px;
-  margin: 0;
-  margin-bottom: 58px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-top: 13px;
-  padding-right: 34px;
-  padding-bottom: 32px;
-  padding-left: 33px;
+    padding: 0;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+  }
 
-  font-size: 13px;
-  line-height: 24px;
-  color: #000;
+  &__description {
+    @include margin-center();
 
-  border: 1px solid #ececec;
-  border-top: none;
-}
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 260px;
+    margin-bottom: 58px;
+    padding-top: 13px;
+    padding-right: 34px;
+    padding-bottom: 32px;
+    padding-left: 33px;
 
-.production__btn {
-  margin-top: 13px;
+    font-size: 13px;
+    line-height: 24px;
+    color: $secondary-color;
+
+    border: 1px solid $third-color;
+    border-top: none;
+  }
+
+  &__btn {
+    margin-top: 13px;
+  }
 }

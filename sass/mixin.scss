@@ -1,0 +1,16 @@
+@mixin absolute-pseudo-element() {
+    content: "";
+    position: absolute;
+}
+
+@mixin clear-list() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin margin-center() {
+  margin-right: auto;
+  margin-left: auto;
+}

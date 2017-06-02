@@ -1,0 +1,84 @@
+.production {
+  @include margin-center();
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__title {
+    @include margin-center();
+
+    position: relative;
+
+    box-sizing: border-box;
+    width: 260px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 23px;
+    padding-bottom: 24px;
+    padding-left: 88px;
+
+    font-size: 17px;
+    line-height: 24px;
+    color: $secondary-color;
+
+    border: 1px solid $third-color;
+    border-bottom: none;
+
+    &::before {
+      @include absolute-pseudo-element();
+
+      top: 34px;
+      left: 33px;
+
+      width: 32px;
+      height: 22px;
+
+      background-color: #ff8800;
+    }
+  }
+
+  &__video {
+    @include margin-center();
+
+    position: relative;
+    width: 260px;
+    height: 150px;
+  }
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    padding: 0;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: none;
+  }
+
+  &__description {
+    @include margin-center();
+
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 260px;
+    margin-bottom: 58px;
+    padding-top: 13px;
+    padding-right: 34px;
+    padding-bottom: 32px;
+    padding-left: 33px;
+
+    font-size: 13px;
+    line-height: 24px;
+    color: $secondary-color;
+
+    border: 1px solid $third-color;
+    border-top: none;
+  }
+
+  &__btn {
+    margin-top: 13px;
+  }
+}

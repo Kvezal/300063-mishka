@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка | Каталог</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="logo" href="index.html">
-      <img src="http://placehold.it/86x35" alt="Логотип 'Mishka'" width="86" height="35">
+      <img src="img/logo-mobile.svg" alt="Логотип 'Mishka'" width="86" height="35">
     </a>
-    <nav class="main-nav  main-nav--nojs">
-      <button class="main-nav__toggle  main-nav__toggle--open" type="button"></button>
-      <ul class="main-nav__list">
+    <nav class="main-nav">
+      <button class="main-nav__toggle  main-nav__toggle--nojs" type="button"></button>
+      <ul class="main-nav__list  main-nav__list--nojs">
         <li class="main-nav__item"><a>Каталог товаров</a></li>
         <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
         <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -21,15 +22,15 @@
       </ul>
     </nav>
     <div class="intro">
-      <h1 class="main-title">Каталог Товаров</h1>
+      <h1 class="main-title">Каталог товаров</h1>
     </div>
   </header>
 
-  <main class="inner">
+  <main>
     <section class="catalog">
       <article class="catalog-item">
         <a class="catalog-item__link" href="#">
-          <img src="http://placehold.it/260x195" alt="" width="260" height="195">
+          <img src="img/photo-1-mobile@1x.jpg" alt="" width="260" height="195">
         </a>
         <div class="catalog-item__description">
           <div class="catalog-item__description-header">
@@ -45,7 +46,7 @@
 
       <article class="catalog-item">
         <a class="catalog-item__link" href="#">
-          <img src="http://placehold.it/260x195" alt="" width="260" height="195">
+          <img src="img/photo-2-mobile@1x.jpg" alt="" width="260" height="195">
         </a>
         <div class="catalog-item__description">
           <div class="catalog-item__description-header">
@@ -61,7 +62,7 @@
 
       <article class="catalog-item">
         <a class="catalog-item__link" href="#">
-          <img src="http://placehold.it/260x195" alt="" width="260" height="195">
+          <img src="img/photo-3-mobile@1x.jpg" alt="" width="260" height="195">
         </a>
         <div class="catalog-item__description">
           <div class="catalog-item__description-header">
@@ -78,28 +79,33 @@
 
     <section class="production">
       <h2 class="production__title">Процесс производства</h2>
-      <video preload="metadata" poster="http://placehold.it/260x150">
-      </video>
+      <div class="production__video">
+        <video preload="metadata" poster="img/video-mobile@1x.jpg"></video>
+        <button class="production__play" type="button">
+          <img src="img/icon-play.svg" alt="">
+        </button>
+      </div>
       <div class="production__description">
         <p class="production__text">
           По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
         </p>
-        <a class="production__btn  btn" href="form.html"></a>
+        <a class="production__btn  btn" href="form.html">Сделать заказ</a>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <p class="social">
-      <a class="solial__link  solial__link--inst" href="#">Мы в итстаграмме</a>
-      <a class="solial__link  solial__link--fb" href="#">Мы в Фейсбуке</a>
-      <a class="solial__link  solial__link--tw" href="#">Мы в Вконтакте</a>
+      <a class="social__link  social__link--inst" href="#">Мы в итстаграмме</a>
+      <a class="social__link  social__link--fb" href="#">Мы в Фейсбуке</a>
+      <a class="social__link  social__link--tw" href="#">Мы в Вконтакте</a>
     </p>
     <p class="page-footer__copyright">
       Разработано
       <a class="page-footer__html-academy" href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy</a>
     </p>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

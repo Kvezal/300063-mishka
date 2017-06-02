@@ -1,0 +1,15 @@
+.promo-text {
+  @include margin-center();
+
+  box-sizing: border-box;
+  width: 320px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 22px;
+  padding-right: 35px;
+  padding-bottom: 23px;
+  padding-left: 30px;
+
+  font-size: 13px;
+  line-height: 24px;
+}

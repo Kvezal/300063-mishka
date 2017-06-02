@@ -4,16 +4,17 @@
 <head>
   <meta charset="UTF-8">
   <title>HTML Academy: Мишка | Форма</title>
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="page-header">
     <a class="logo" href="index.html">
-      <img src="http://placehold.it/86x35" alt="Логотип 'Mishka'" width="86" height="35">
+      <img src="img/logo-mobile.svg" alt="Логотип 'Mishka'" width="86" height="35">
     </a>
-    <nav class="main-nav  main-nav--nojs">
-      <button class="main-nav__toggle  main-nav__toggle--open" type="button"></button>
-      <ul class="main-nav__list">
+    <nav class="main-nav">
+      <button class="main-nav__toggle  main-nav__toggle--nojs" type="button"></button>
+      <ul class="main-nav__list  main-nav__list--nojs">
         <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
         <li class="main-nav__item"><a>Вязание на заказ</a></li>
         <li class="main-nav__item  main-nav__item--search"><a href="#">Поиск по сайту</a></li>
@@ -21,13 +22,13 @@
       </ul>
     </nav>
     <div class="intro">
-      <h1 class="main-title">Каталог Товаров</h1>
+      <h1 class="main-title">Вязание на заказ</h1>
     </div>
   </header>
 
   <main class="inner">
     <p class="promo-text">
-      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простуюформу заказа и мы свяжемся с вами, чтобы уточнить детали.
+      Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
     </p>
     <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
       <fieldset class="order-form__item  order-form__item--type">
@@ -40,7 +41,7 @@
         </div>
       </fieldset>
 
-      <fieldset class="order-form__item  order__item--color">
+      <fieldset class="order-form__item  order-form__item--color">
         <h2 class="order-form__title">Цвет</h2>
         <div class="order-form__group">
           <input class="order-form__input-check" type="checkbox" name="color-white" id="color-white" checked>
@@ -58,8 +59,8 @@
         </div>
       </fieldset>
 
-      <fieldset class="order-form__item">
-        <h2 class="order-form__title">ФИО</h2>
+      <fieldset class="order-form__item  order-form__item--name">
+        <h2 class="order-form__title  order-form__title--name">ФИО</h2>
         <div class="order-form__group">
           <label class="order-form__label" for="name-field">Имя:</label>
           <input class="order-form__input" type="text" name="name" id="name-field" placeholder="Введите ваше имя*" required>
@@ -70,15 +71,15 @@
         </div>
       </fieldset>
 
-      <fieldset class="order-form__item">
-        <h2 class="order-form__title">Тел</h2>
-        <input class="order-form__input" type="tel" name="tel" pattern="\d{1}[' ']*\d{3}[' ']*\d{3}[' ']*\d{2}[' ']*\d{2}" placeholder="+7 ХХХ XXX ХХ ХХ*" required>
-        <h2 class="order-form__title">e-mail</h2>
-        <input class="order-form__input" type="email" name="email" placeholder="Ваш Email*" required>
+      <fieldset class="order-form__item  order-form__item--contacts">
+        <h2 class="order-form__title  order-form__title--tel">Тел</h2>
+        <input class="order-form__input  order-form__input--tel" type="tel" name="tel" pattern="\d{1}[' ']*\d{3}[' ']*\d{3}[' ']*\d{2}[' ']*\d{2}" placeholder="+7 ХХХ XXX ХХ ХХ*" required>
+        <h2 class="order-form__title  order-form__title--email">e-mail</h2>
+        <input class="order-form__input  order-form__input--email" type="email" name="email" placeholder="Ваш Email*" required>
       </fieldset>
 
       <fieldset class="order-form__item">
-        <h2 class="order-form__title">Доп</h2>
+        <h2 class="order-form__title  order-form__title--addit">Доп</h2>
         <textarea class="order-form__textarea" name="additional-information" placeholder="Опишите все ваши пожелания к заказу"></textarea>
       </fieldset>
 
@@ -93,15 +94,16 @@
 
   <footer class="page-footer">
     <p class="social">
-      <a class="solial__link  solial__link--inst" href="#">Мы в итстаграмме</a>
-      <a class="solial__link  solial__link--fb" href="#">Мы в Фейсбуке</a>
-      <a class="solial__link  solial__link--tw" href="#">Мы в Вконтакте</a>
+      <a class="social__link  social__link--inst" href="#">Мы в итстаграмме</a>
+      <a class="social__link  social__link--fb" href="#">Мы в Фейсбуке</a>
+      <a class="social__link  social__link--tw" href="#">Мы в Вконтакте</a>
     </p>
     <p class="page-footer__copyright">
       Разработано
       <a class="page-footer__html-academy" href="https://htmlacademy.ru/intensive/adaptive">HTML-Academy</a>
     </p>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

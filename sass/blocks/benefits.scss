@@ -1,0 +1,104 @@
+.benefits {
+  display: flex;
+  flex-direction: column;
+
+  &__wrapper {
+    @include margin-center();
+
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    padding-top: 6px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  &__list {
+    @include clear-list();
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100px;
+    margin-bottom: 18px;
+    padding-top: 65px;
+
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+
+    &::after {
+      @include absolute-pseudo-element();
+
+      background-color: #ff8800;
+    }
+
+    &--flower {
+      &::after {
+        top: 10px;
+        left: 9px;
+
+        width: 33px;
+        height: 38px;
+      }
+    }
+
+    &--cash {
+      &::after {
+        top: 12px;
+        left: 2px;
+
+        width: 47px;
+        height: 27px;
+      }
+    }
+
+    &--heart {
+      &::after {
+        top: 17px;
+        left: 9px;
+
+        width: 34px;
+        height: 27px;
+      }
+    }
+
+    &--clew {
+      &::after {
+        top: 14px;
+        left: 5px;
+
+        width: 35px;
+        height: 34px;
+      }
+    }
+
+    &--rocket {
+      &::after {
+        top: 15px;
+        left: -4px;
+
+        width: 55px;
+        height: 23px;
+      }
+    }
+
+    &--present {
+      &::after {
+        top: 13px;
+        left: 5px;
+
+        width: 33px;
+        height: 32px;
+      }
+    }
+  }
+}

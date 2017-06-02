@@ -1,0 +1,12 @@
+.main-title {
+  @include margin-center();
+
+  width: 260px;
+  margin-top: 70px;
+
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: $secondary-color;
+}

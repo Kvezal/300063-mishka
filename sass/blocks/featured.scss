@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
 
-
-
   &__inner {
     @include margin-center();
 

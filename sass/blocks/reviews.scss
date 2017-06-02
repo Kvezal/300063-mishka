@@ -1,77 +1,77 @@
 .reviews {
   display: flex;
   flex-direction: column;
+}
 
-  &__wrapper {
-    @include margin-center();
+.reviews__wrapper {
+  @include margin-center();
 
-    display: flex;
-    flex-direction: column;
-    width: 260px;
-    padding-top: 37px;
-    padding-bottom: 50px;
-  }
+  display: flex;
+  flex-direction: column;
+  width: 260px;
+  padding-top: 37px;
+  padding-bottom: 50px;
+}
 
-  &__title {
-    margin-top: 0;
-    margin-bottom: 0;
+.reviews__title {
+  margin-top: 0;
+  margin-bottom: 0;
 
-    font-weight: 700;
-    font-size: 25px;
-    line-height: 30px;
-    color: $secondary-color;
-  }
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  color: $secondary-color;
+}
 
-  &__item {
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-  }
+.reviews__item {
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
 
-  &__text {
-    margin-top: 24px;
+.reviews__text {
+  margin-top: 24px;
 
-    font-size: 15px;
-    line-height: 30px;
-  }
+  font-size: 15px;
+  line-height: 30px;
+}
 
-  &__footer {
-    display: flex;
-    flex-direction: column;
-    margin-top: 27px;
+.reviews__footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 27px;
 
-    font-size: 17px;
-    font-style: normal;
-  }
+  font-size: 17px;
+  font-style: normal;
+}
 
-  &__author {
-    line-height: 24px;
-  }
+.reviews__author {
+  line-height: 24px;
+}
 
-  &__tag {
-    margin-top: 3px;
+.reviews__tag {
+  margin-top: 3px;
 
-    line-height: 30px;
-  }
+  line-height: 30px;
+}
 
-  &__controls {
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    margin-top: 29px;
-    margin-bottom: 38px;
+.reviews__controls {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin-top: 29px;
+  margin-bottom: 38px;
 
-    border: 1px solid $third-color;
-  }
+  border: 1px solid $third-color;
+}
 
-  &__toggle {
-    flex-grow: 1;
+.reviews__toggle {
+  flex-grow: 1;
 
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 
-    &--next {
-      border-left: 1px solid $third-color;
-    }
+  &--next {
+    border-left: 1px solid $third-color;
   }
 }

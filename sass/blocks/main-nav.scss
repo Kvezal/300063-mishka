@@ -8,107 +8,105 @@
   padding: 0;
 
   background-color: $third-color;
+}
 
+.main-nav__toggle {
+  position: absolute;
+  top: -47px;
+  right: 31px;
 
-  &__toggle {
-    position: absolute;
-    top: -47px;
-    right: 31px;
+  width: 20px;
+  height: 14px;
 
-    width: 20px;
-    height: 14px;
+  //background-color: transparent;
+  background-color: #ff8800;
+  ;
+  border: none;
 
-    //background-color: transparent;
-    background-color: #ff8800;;
+  &--nojs {
+    display: none;
+  }
 
-    border: none;
+  &--open {
+    top: -51px;
+    right: 30px;
 
-    &--nojs {
-      display: none;
-    }
+    width: 21px;
+    height: 20px;
+    background-color: #ff8800;
+  }
+}
 
-    &--open {
-      top: -51px;
-      right: 30px;
+.main-nav__list {
+  @include clear-list();
+  @include margin-center();
 
-      width: 21px;
-      height: 20px;
+  position: absolute;
+  top: 1px;
+  right: 0;
+  left: 0;
+
+  display: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  background-color: $eighth-color;
+  //border-right: 1px solid $third-color;
+  //border-left: 1px solid $third-color;
+
+  &--nojs {
+    display: block;
+  }
+
+  &--open {
+    display: block;
+  }
+}
+
+.main-nav__item {
+  border-bottom: 1px solid $third-color;
+
+  &--search {
+    position: relative;
+
+    &::after {
+      @include absolute-pseudo-element();
+
+      top: 31px;
+      left: 32px;
+
+      width: 18px;
+      height: 19px;
 
       background-color: #ff8800;
     }
   }
+  &--cart {
+    position: relative;
 
-  &__list {
-    @include clear-list();
-    @include margin-center();
+    &::after {
+      @include absolute-pseudo-element();
 
-    position: absolute;
-    top: 1px;
-    right: 0;
-    left: 0;
+      top: 31px;
+      left: 30px;
 
-    display: none;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 320px;
+      width: 21px;
+      height: 18px;
 
-    background-color: $eighth-color;
-    //border-right: 1px solid $third-color;
-    //border-left: 1px solid $third-color;
-
-    &--nojs {
-      display: block;
-    }
-
-    &--open {
-      display: block;
+      background-color: #ff8800;
     }
   }
+}
 
-  &__item {
-    border-bottom: 1px solid $third-color;
+.main-nav__item a {
+  display: block;
+  box-sizing: border-box;
+  min-height: 79px;
+  padding-left: 75px;
 
-    &--search {
-      position: relative;
-
-      &::after {
-        @include absolute-pseudo-element();
-
-        top: 31px;
-        left: 32px;
-
-        width: 18px;
-        height: 19px;
-        background-color: #ff8800;
-      }
-    }
-
-    &--cart {
-      position: relative;
-
-      &::after {
-        @include absolute-pseudo-element();
-
-        top: 31px;
-        left: 30px;
-
-        width: 21px;
-        height: 18px;
-        background-color: #ff8800;
-      }
-    }
-
-    a {
-      display: block;
-      box-sizing: border-box;
-      min-height: 79px;
-      padding-left: 75px;
-
-      font-weight: 700;
-      font-size: 17px;
-      line-height: 79px;
-      color: $secondary-color;
-      text-decoration: none;
-    }
-  }
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 79px;
+  color: $secondary-color;
+  text-decoration: none;
 }

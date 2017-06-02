@@ -1,72 +1,70 @@
 .contacts {
   display: flex;
   flex-direction: column;
-
-  &__wrapper {
-    @include margin-center();
-
-    display: flex;
-    flex-direction: column;
-    width: 320px;
-    padding-top: 36px;
-    padding-bottom: 39px;
-  }
-
-  &__title {
-    margin: 0;
-    padding-right: 30px;
-    padding-left: 28px;
-
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 30px;
-  }
-
-  &__inner {
-    display: table;
-    padding-right: 30px;
-    padding-left: 30px;
-
-    font-size: 15px;
-    line-height: 30px;
-  }
-
-  &__item {
-    display: table-row;
-  }
-
-  &__field {
-    padding-top: 27px;
-    display: table-cell;
-    width: 76px;
-  }
-
-  &__link {
-    display: table-cell;
-
-    color: $primary-color;
-    text-decoration: none;
-
-    border-bottom: 1px solid $seventh-color;
-  }
-
-  &__text {
-    display: table-cell;
-  }
-
-  &__map {
-    width: 320px;
-    height: 457px;
-    margin-top: 37px;
-    margin-bottom: 40px;
-
-    background-image: url(../img/map-mobile@1x.jpg);
-  }
-
-  &__btn {
-    width: 260px;
-    align-self: center;
-  }
 }
 
+.contacts__wrapper {
+  @include margin-center();
 
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding-top: 36px;
+  padding-bottom: 39px;
+}
+
+.contacts__title {
+  margin: 0;
+  padding-right: 30px;
+  padding-left: 28px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.contacts__inner {
+  display: table;
+  padding-right: 30px;
+  padding-left: 30px;
+
+  font-size: 15px;
+  line-height: 30px;
+}
+
+.contacts__item {
+  display: table-row;
+}
+
+.contacts__field {
+  display: table-cell;
+  padding-top: 27px;
+  width: 76px;
+}
+
+.contacts__link {
+  display: table-cell;
+
+  color: $primary-color;
+  text-decoration: none;
+
+  border-bottom: 1px solid $seventh-color;
+}
+
+.contacts__text {
+  display: table-cell;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 457px;
+  margin-top: 37px;
+  margin-bottom: 40px;
+
+  background-image: url(../img/map-mobile@1x.jpg);
+}
+
+.contacts__btn {
+  width: 260px;
+  align-self: center;
+}

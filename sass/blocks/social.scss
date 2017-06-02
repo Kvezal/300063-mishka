@@ -4,31 +4,31 @@
   box-sizing: border-box;
   height: 80px;
   margin: 0;
+}
 
-  &__link {
-    display: block;
+.social__link {
+  display: block;
+  margin-top: auto;
+  margin-right: 20px;
+  margin-bottom: auto;
+  margin-left: 20px;
 
-    margin-top: auto;
-    margin-right: 20px;
-    margin-bottom: auto;
-    margin-left: 20px;
+  font-size: 0;
 
-    font-size: 0;
-    background-color: #ff8800;
+  background-color: #ff8800;
 
-    &--inst {
-      width: 22px;
-      height: 21px;
-    }
+  &--inst {
+    width: 22px;
+    height: 21px;
+  }
 
-    &--fb {
-      width: 15px;
-      height: 29px;
-    }
+  &--fb {
+    width: 15px;
+    height: 29px;
+  }
 
-    &--tw {
-      width: 24px;
-      height: 20px;
-    }
+  &--tw {
+    width: 24px;
+    height: 20px;
   }
 }

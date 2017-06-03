@@ -1,12 +1,12 @@
 .categories {
-  display: flex;
+  @include center();
+
   flex-direction: column;
   width: 100%;
 }
 
 .categories__list {
   @include clear-list();
-  @include margin-center();
 
   box-sizing: border-box;
   width: 320px;
@@ -20,6 +20,8 @@
 }
 
 .categories__link {
+  @include font-set(700, 19px, 24px);
+
   display: block;
   box-sizing: border-box;
   width: 100%;
@@ -28,10 +30,6 @@
   padding-right: 160px;
   padding-bottom: 30px;
   padding-left: 28px;
-
-  font-weight: 700;
-  font-size: 19px;
-  line-height: 24px;
   color: $eighth-color;
   text-decoration: none;
 

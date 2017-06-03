@@ -1,10 +1,12 @@
 .main-nav {
-  position: relative;
+  @include center();
 
-  display: flex;
+  position: relative;
+  z-index: 1;
+
   flex-direction: column;
   width: 320px;
-  height: 80px;
+  height: 79px;
   padding: 0;
   overflow: hidden;
 
@@ -46,13 +48,11 @@
 
 .main-nav__list {
   @include clear-list();
-  @include margin-center();
 
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   width: 320px;
-  background-color: $eighth-color;
   //border-right: 1px solid $third-color;
   //border-left: 1px solid $third-color;
 }
@@ -94,14 +94,13 @@
 }
 
 .main-nav__link {
+  @include font-set(700, 17px, 79px);
+
   display: block;
   box-sizing: border-box;
   min-height: 79px;
   padding-left: 75px;
 
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 79px;
   color: $secondary-color;
   text-decoration: none;
 }

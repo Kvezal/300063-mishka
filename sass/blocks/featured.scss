@@ -1,10 +1,9 @@
 .featured {
-  display: flex;
+  @include center();
   flex-direction: column;
 }
 
 .featured__inner {
-  @include margin-center();
 
   position: relative;
 
@@ -17,19 +16,17 @@
 }
 
 .featured__title {
+  @include font-set(700, 25px, 30px);
+
   margin: 0;
   margin-bottom: 4px;
 
-  font-weight: 700px;
-  font-size: 25px;
-  line-height: 30px;
   color: $secondary-color;
 }
 
 .featured__label {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
+  @include font-set(700, 17px, 20px);
+
   color: $fifth-color;
   text-transform: uppercase;
 }
@@ -40,18 +37,16 @@
 }
 
 .featured__text {
-  margin-top: 24px;
+  @include font(15px, 24px);
 
-  font-size: 15px;
-  line-height: 24px;
+  margin-top: 24px;
 }
 
 .featured__table {
+  @include font(15px, 20px);
+
   width: 100%;
   margin-top: 3px;
-
-  font-size: 15px;
-  line-height: 20px;
 
   border-collapse: collapse;
 }
@@ -78,10 +73,12 @@
 }
 
 .featured__price {
+  @include font-set(700, 17px, 24px);
   margin-bottom: 26px;
 
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
   text-align: center;
+}
+
+.featured__btn {
+  line-height: 20px;
 }

@@ -12,14 +12,13 @@
 }
 
 .page-footer__copyright {
+  @include font-set(700, 18px, 34px);
+
   box-sizing: border-box;
   height: 80px;
   margin: 0;
-  padding-top: 20px;;
+  padding-top: 20px;
 
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 34px;
   text-align: center;
 
   border-top: 1px solid $tenth-color;

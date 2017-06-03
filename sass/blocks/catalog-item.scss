@@ -1,15 +1,12 @@
 .catalog-item {
-  @include margin-center();
-
   width: 260px;
   margin-top: 30px;
 }
 
 .catalog-item__link {
-  display: block;
+  @include font(0, 0);
 
-  font-size: 0;
-  line-height: 0;
+  display: block;
 }
 
 .catalog-item__link img {
@@ -30,20 +27,17 @@
 }
 
 .catalog-item__name {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
+  @include font-set(700, 17px, 24px);
   color: $secondary-color;
   text-decoration: none;
 }
 
 .catalog-item__text {
+  @include font(13px, 30px);
+
   margin: 0;
   margin-top: 5px;
   margin-bottom: 19px;
-
-  font-size: 13px;
-  line-height: 30px;
 }
 
 .catalog-item__description-footer {
@@ -54,19 +48,16 @@
 }
 
 .catalog-item__price {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
+  @include font-set(700, 15px, 24px);
   color: $secondary-color;
 }
 
 .catalog-item__buy {
+  @include font(0, 0);
+
   width: 21px;
   height: 19px;
   margin-top: 1px;
-
-  font-size: 0;
-  line-height: 0;
 
   background: #ff8800;
 }

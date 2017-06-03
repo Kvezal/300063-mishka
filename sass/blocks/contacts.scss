@@ -1,11 +1,10 @@
 .contacts {
-  display: flex;
+  @include center();
+
   flex-direction: column;
 }
 
 .contacts__wrapper {
-  @include margin-center();
-
   display: flex;
   flex-direction: column;
   width: 320px;
@@ -14,22 +13,19 @@
 }
 
 .contacts__title {
+  @include font-set(700, 18px, 30px);
+
   margin: 0;
   padding-right: 30px;
   padding-left: 28px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 30px;
 }
 
 .contacts__inner {
+  @include font(15px, 30px);
+
   display: table;
   padding-right: 30px;
   padding-left: 30px;
-
-  font-size: 15px;
-  line-height: 30px;
 }
 
 .contacts__item {

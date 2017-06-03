@@ -1,5 +1,6 @@
 .catalog {
-  display: flex;
+  @include center();
+
   flex-direction: column;
   box-sizing: border-box;
   width: 100%;

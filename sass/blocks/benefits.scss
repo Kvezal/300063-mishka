@@ -1,11 +1,8 @@
 .benefits {
-  display: flex;
-  flex-direction: column;
+  @include center();
 }
 
 .benefits__wrapper {
-  @include margin-center();
-
   display: flex;
   flex-direction: column;
   width: 260px;
@@ -13,9 +10,7 @@
 }
 
 .benefits__title {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  @include font-set(700, 25px, 30px);
 }
 
 .benefits__list {
@@ -26,16 +21,14 @@
 }
 
 .benefits__item {
+  @include font-set(700, 17px, 20px);
+
   position: relative;
 
   box-sizing: border-box;
   min-height: 100px;
   margin-bottom: 18px;
   padding-top: 65px;
-
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 20px;
 
   &::after {
     @include absolute-pseudo-element();

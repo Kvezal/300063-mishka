@@ -1,13 +1,11 @@
 .production {
-  @include margin-center();
-
-  display: flex;
+  @include center;
   flex-direction: column;
   width: 100%;
 }
 
 .production__title {
-  @include margin-center();
+  @include font(17px, 24px);
 
   position: relative;
 
@@ -19,8 +17,6 @@
   padding-bottom: 24px;
   padding-left: 88px;
 
-  font-size: 17px;
-  line-height: 24px;
   color: $secondary-color;
   border: 1px solid $third-color;
   border-bottom: none;
@@ -39,7 +35,6 @@
 }
 
 .production__video {
-  @include margin-center();
 
   position: relative;
 
@@ -60,7 +55,7 @@
 }
 
 .production__description {
-  @include margin-center();
+  @include font(13px, 24px);
 
   display: flex;
   flex-direction: column;
@@ -72,8 +67,6 @@
   padding-bottom: 32px;
   padding-left: 33px;
 
-  font-size: 13px;
-  line-height: 24px;
   color: $secondary-color;
 
   border: 1px solid $third-color;

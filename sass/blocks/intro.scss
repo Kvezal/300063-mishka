@@ -1,5 +1,7 @@
 .intro {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 320px;
   min-height: 176px;
 
@@ -12,5 +14,29 @@
     background-image: url(../img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% -19px;
+  }
+}
+
+.intro__text {
+  display: none;
+}
+
+@media #{$tablet-widths} {
+  .intro {
+    width: 768px;
+
+    &--index {
+      height: 745px;
+    }
+  }
+
+  .intro__text {
+    @include font(15px, 24px);
+
+    display: block;
+    width: 668px;
+    margin-top: 17px;
+
+    text-align: right;
   }
 }

@@ -64,3 +64,35 @@
     }
   }
 }
+
+@media #{$tablet-widths} {
+  .categories__list {
+    display: flex;
+    flex-direction: row;
+    width: 668px;
+    margin-top: -118px;
+  }
+
+  .categories__link {
+    @include font(20px, 30px);
+
+    min-height: 118px;
+    padding-top: 28px;
+    padding-right: 160px;
+    padding-bottom: 30px;
+    padding-left: 36px;
+
+    &--interior {
+      &::after {
+        top: 30px;
+        right: 37px;
+      }
+    }
+    &--toys {
+      &::after {
+        top: 31px;
+        right: 34px;
+      }
+    }
+  }
+}

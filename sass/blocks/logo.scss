@@ -11,3 +11,10 @@
 .logo img {
   border: none;
 }
+
+@media #{$tablet-widths} {
+  .logo {
+    margin-top: 22px;
+    margin-left: 0;
+  }
+}

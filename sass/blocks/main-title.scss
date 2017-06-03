@@ -7,3 +7,18 @@
   text-align: center;
   color: $secondary-color;
 }
+
+@media #{$tablet-widths} {
+  .main-title {
+    @include font(43px, 50px);
+
+    width: 700px;
+    margin-top: 39px;
+    margin-bottom: 80px;
+
+    &--index {
+      margin-top: 97px;
+      margin-bottom: 220px;
+    }
+  }
+}

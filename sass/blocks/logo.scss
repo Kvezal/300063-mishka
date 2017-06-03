@@ -18,3 +18,14 @@
     margin-left: 0;
   }
 }
+
+@media #{$desktop-widths} {
+  .logo {
+    width: 149px;
+    height: 72px;
+    margin-top: 9px;
+    margin-right: 101px;
+    margin-left: 39px;
+    background-color: #dddddd;
+  }
+}

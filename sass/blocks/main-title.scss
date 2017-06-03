@@ -22,3 +22,18 @@
     }
   }
 }
+
+@media #{$desktop-widths} {
+  .main-title {
+    @include font(53px, 57px);
+
+    width: 700px;
+    margin-top: 37px;
+    margin-bottom: 102px;
+
+    &--index {
+      margin-top: 97px;
+      margin-bottom: 220px;
+    }
+  }
+}

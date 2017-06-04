@@ -88,11 +88,21 @@
         right: 37px;
       }
     }
+
     &--toys {
       &::after {
         top: 31px;
         right: 34px;
       }
     }
+  }
+}
+
+@media #{$desktop-widths} {
+  .categories__list {
+    display: flex;
+    flex-direction: row;
+    width: 1050px;
+    margin-top: -118px;
   }
 }

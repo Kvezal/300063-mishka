@@ -61,6 +61,7 @@
 .main-nav__item {
   border-bottom: 1px solid $third-color;
   background-color: $eighth-color;
+  width: 320px;
 
   &--search {
     position: relative;
@@ -133,6 +134,7 @@
 
   .main-nav__item {
     order: 1;
+    width: auto;
     padding-right: 37px;
 
     background-color: transparent;

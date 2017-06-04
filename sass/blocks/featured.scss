@@ -85,6 +85,7 @@
 
 @media #{$tablet-widths} {
   .featured__inner {
+    box-sizing: border-box;
     width: 668px;
     padding-top: 46px;
     padding-bottom: 66px;
@@ -139,7 +140,7 @@
   }
 
   .featured__bottom {
-    width: 290px;
+    width: 292px;
     margin-top: 56px;
   }
 
@@ -147,5 +148,62 @@
     @include font(20px, 24px);
 
     margin-bottom: 34px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .featured__inner {
+    width: 1050px;
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .featured__top {
+    position: relative;
+    z-index: 1;
+
+    width: 175px;
+    margin-top: 60px;
+  }
+
+  .featured__title {
+    @include font(53px, 57px);
+
+    order: 1;
+    margin-left: 52px;
+
+    white-space: nowrap;
+  }
+
+  .featured__label {
+    padding-top: 15px;
+    margin-left: 47px;
+  }
+
+  .featured__wrapper {
+    width: 875px;
+    height: 644px;
+    padding-top: 0;
+    align-content: flex-end;
+  }
+
+  .featured__text {
+    margin-top: auto;
+  }
+
+  .featured__table {
+    margin-top: 49px;
+  }
+
+  .featured__image {
+    width: 525px;
+    height: 636px;
+    margin-left: 58px;
+  }
+
+  .featured__bottom {
+    margin-top: 109px;
   }
 }

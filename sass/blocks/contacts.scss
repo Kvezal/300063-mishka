@@ -67,7 +67,7 @@
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    width: auto;
+    width: 768px;
     padding-top: 47px;
     padding-bottom: 57px;
   }
@@ -95,6 +95,8 @@
 
   .contacts__inner {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     width: 668px;
     margin-top: 22px;
     padding-right: 0px;
@@ -116,9 +118,9 @@
   }
 
   .contacts__map {
+    width: 768px;
     margin-top: 56px;
     margin-bottom: 55px;
-    margin-left: auto;
   }
 
   .contacts__btn {
@@ -156,8 +158,9 @@
     display: table;
     width: 310px;
     margin-top: 149px;
-    margin-left: -6px;
+    margin-right: auto;
     margin-bottom: 100px;
+    margin-left: -6px;
   }
 
   .contacts__field {

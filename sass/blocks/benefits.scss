@@ -137,3 +137,20 @@
     }
   }
 }
+
+@media #{$desktop-widths} {
+  .benefits__wrapper {
+    width: 700px;
+    padding-bottom: 44px;
+  }
+
+  .benefits__title {
+    @include font(53px, 57px);
+
+    margin-top: 59px;
+  }
+
+  .benefits__item {
+    width: 350px;
+  }
+}

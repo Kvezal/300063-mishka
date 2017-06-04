@@ -14,8 +14,11 @@
 
 @media #{$tablet-widths} {
   .logo {
+    width: 113px;
+    height: 46px;
     margin-top: 22px;
     margin-left: 0;
+    background-color: #dddddd;
   }
 }
 
@@ -24,8 +27,8 @@
     width: 149px;
     height: 72px;
     margin-top: 9px;
-    margin-right: 101px;
+    margin-right: 103px;
     margin-left: 39px;
-    background-color: #dddddd;
+    margin-bottom: 0;
   }
 }

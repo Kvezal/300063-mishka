@@ -7,7 +7,6 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 320px;
-  height: 79px;
   padding: 0;
   overflow: hidden;
 
@@ -51,9 +50,10 @@
   @include clear-list();
 
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   box-sizing: border-box;
   width: 320px;
+  height: 80px;
   //border-right: 1px solid $third-color;
   //border-left: 1px solid $third-color;
 }
@@ -103,6 +103,7 @@
 
   display: block;
   box-sizing: border-box;
+  width: 320px;
   min-height: 79px;
   padding-left: 75px;
 
@@ -115,7 +116,8 @@
   .main-nav {
     justify-content:space-between;
     align-items: stretch;
-    width: 668px;
+    width: 748px;
+    padding-left: 39px;
     height: 88px;
     overflow: visible;
   }
@@ -125,9 +127,8 @@
   }
 
   .main-nav__list {
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 668px;
+    width: 710px;
+    height: auto;
   }
 
   .main-nav__item {
@@ -139,7 +140,7 @@
 
     &--logo {
       order: 0;
-      width: 320px;
+      width: 321px;
       height: 88px;
       padding-right: 0;
     }
@@ -173,6 +174,7 @@
   .main-nav__link {
     @include font(15px, 24px);
 
+    width: auto;
     min-height: auto;
     margin-top: 18px;
     margin-bottom: 0;
@@ -186,7 +188,7 @@
 
     &--cart {
       @include font-set(700, 17px, 86px);
-
+      width: 305px;
       min-height: 88px;
       margin-top: 0;
       padding-left: 82px;
@@ -198,12 +200,12 @@
   .main-nav {
     width: 1133px;
     margin: 0;
+    padding-left: 0px;
   }
 
   .main-nav__list {
     flex-direction: row;
     width: 1133px;
-    padding-right: 41px;
     padding-left: 41px;
   }
 
@@ -238,7 +240,7 @@
     @include font(17px, 24px);
     margin: 0;
     padding-top: 31px;
-    padding-right: 37px;
+    padding-right: 36px;
     padding-bottom: 33px;
     padding-left: 33px;
 
@@ -250,8 +252,9 @@
       order: 1;
       margin: 0;
       width: auto;
-      padding-left: 40px;
       padding-top: 0;
+
+      padding-left: 40px;
     }
 
     &--search {

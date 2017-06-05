@@ -22,10 +22,10 @@
 
 @media #{$tablet-widths} {
   .intro {
+    border-top: 1px solid $eleventh-color;
 
     &--index {
       height: 745px;
-      border-top: 1px solid $eleventh-color;
     }
   }
 

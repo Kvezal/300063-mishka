@@ -6,6 +6,10 @@
   width: 86px;
   margin-top: 22px;
   margin-bottom: 22px;
+
+  &--footer {
+    display: none;
+  }
 }
 
 .logo img {
@@ -19,6 +23,12 @@
     margin-top: 22px;
     margin-left: 0;
     background-color: #dddddd;
+
+    &--footer {
+      width: 185px;
+      display: block;
+      margin: 0;
+    }
   }
 }
 

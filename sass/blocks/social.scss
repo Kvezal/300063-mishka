@@ -32,3 +32,10 @@
     height: 20px;
   }
 }
+
+@media #{$tablet-widths} {
+  .social {
+    width: 300px;
+    margin: 0;
+  }
+}

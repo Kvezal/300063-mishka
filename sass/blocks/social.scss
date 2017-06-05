@@ -36,6 +36,12 @@
 @media #{$tablet-widths} {
   .social {
     width: 300px;
-    margin: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .social {
+    margin-right: 190px;
+    margin-left: 190px;
   }
 }

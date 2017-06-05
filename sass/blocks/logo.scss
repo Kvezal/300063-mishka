@@ -26,6 +26,7 @@
 
     &--footer {
       width: 185px;
+      height: auto;
       display: block;
       margin: 0;
     }
@@ -40,5 +41,11 @@
     margin-right: 103px;
     margin-left: 39px;
     margin-bottom: 0;
+
+    &--footer {
+      width: 185px;
+      height: auto;
+      margin: 0;
+    }
   }
 }

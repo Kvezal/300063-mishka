@@ -9,9 +9,6 @@
 
 .order-form__item {
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 260px;
   padding: 0;
 
   border: none;
@@ -27,6 +24,11 @@
   &--contacts {
     margin-bottom: 31px;
   }
+}
+
+.order-form__wrapper {
+  width: 260px;
+  padding: 0;
 }
 
 .order-form__title {
@@ -47,7 +49,7 @@
   }
 
   &--email {
-    margin-top: 31px;
+    margin-top: 10px;
     margin-bottom: 7px;
   }
 
@@ -146,9 +148,7 @@
 }
 
 .order-form__label {
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 18px;
+  @include font-set(700, 17px, 18px);
 }
 
 .order-form__input {
@@ -191,16 +191,209 @@
   display: flex;
   flex-direction: column;
   width: 260px;
-  margin-bottom: 55px;
+  padding-bottom: 55px;
 }
 
 .order-form__note {
   @include font(14px, 16px);
 
-  margin-top: 16px;
-  margin-bottom: 31px;
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 31px;
 }
 
 .order-form__btn {
   line-height: 20px;
+}
+
+
+@media #{$tablet-widths} {
+  .order-form {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .order-form__item {
+    width: 100%;
+    padding: 0;
+    margin-right: 0;
+    margin-left: 0;
+    margin-bottom: 0;
+    border: none;
+
+    &--type {
+      padding-bottom: 68px;
+    }
+
+    &--color {
+      padding-top: 66px;
+      padding-bottom: 10px;
+
+      background-color: $fourth-color;
+    }
+
+    &--name {
+      padding-top: 66px;
+      padding-bottom: 50px;
+    }
+
+    &--contacts {
+      padding-top: 66px;
+      padding-bottom: 50px;
+
+      background-color: $fourth-color;
+    }
+
+    &--addit {
+      padding-top: 50px;
+    }
+  }
+
+  .order-form__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 678px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .order-form__title {
+    width: 166px;
+
+    &--tel {
+      margin-left: 6px;
+    }
+
+    &--email {
+      margin-top: 0;
+      margin-left: 6px;
+    }
+
+    &--addit {
+      margin-top: 16px;
+    }
+  }
+
+  .order-form__group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 501px;
+  }
+
+  .order-form__input-radio {
+    &:checked + .order-form__label-radio::before {
+      box-shadow: inset 0 0 0 13.5px $eighth-color;
+    }
+  }
+
+  .order-form__label-radio {
+    @include font(19px, 19px);
+
+    width: 100%;
+    padding-left: 80px;
+    margin-bottom: 57px;
+
+    &::before {
+      top: -15px;
+
+      width: 52px;
+      height: 52px
+    }
+  }
+
+  .order-form__input-check {
+    &:checked + .order-form__label-check::after {
+      top: -2px;
+      left: 12px;
+
+      width: 30px;
+      height: 16px;
+    }
+  }
+
+  .order-form__label-check {
+    @include font(19px, 19px);
+
+    width: 167px;
+    box-sizing: border-box;
+    padding-left: 80px;
+    margin-right: 95px;
+    margin-bottom: 57px;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      top: -16px;
+
+      width: 54px;
+      height: 52px;
+    }
+  }
+
+  .order-form__label {
+    @include font(19px, 19px);
+
+    padding-right: 25px;
+
+    &--patronym {
+      padding-right: 33px;
+    }
+  }
+
+  .order-form__input {
+    @include font(19px, 19px);
+
+    flex-grow: 1;
+    box-sizing: border-box;
+    width: 350px;
+    height: 52px;
+    margin-top: -16px;
+    margin-bottom: 40px;
+    padding-left: 17px;
+
+    background-color: transparent;
+
+    &--tel {
+      width: 500px;
+    }
+
+    &--email {
+      width: 500px;
+    }
+  }
+
+  .order-form__textarea {
+    @include font(19px, 19px);
+    width: 501px;
+  }
+
+  .order-form__footer {
+    flex-direction: row;
+    width: 668px;
+    padding-top: 53px;
+    padding-bottom: 50px;
+  }
+
+  .order-form__note {
+    @include font(17px, 30px);
+
+    order: 2;
+    width: 438px;
+    margin: 0;
+    margin-top: 10px;
+    padding: 0;
+
+    text-align: right;
+  }
+
+  .order-form__btn {
+    width: 230px;
+    padding: 0;
+  }
 }

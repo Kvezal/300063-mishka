@@ -6,7 +6,7 @@ var menuList = mainNav.querySelector('.main-nav__list');
 
 toggleMenu.classList.remove('main-nav__toggle--nojs');
 mainNav.classList.remove('main-nav--nojs');
-
+menuList.classList.remove('main-nav__list--nojs');
 
 
 toggleMenu.addEventListener('click', function(event) {

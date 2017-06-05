@@ -6,7 +6,6 @@
   min-height: 176px;
 
   background-color: $fourth-color;
-  border-top: 1px solid $eleventh-color;
 
   &--index {
     min-height: 282px;
@@ -26,6 +25,7 @@
 
     &--index {
       height: 745px;
+      border-top: 1px solid $eleventh-color;
     }
   }
 

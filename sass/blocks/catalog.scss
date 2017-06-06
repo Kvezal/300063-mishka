@@ -6,13 +6,14 @@
   width: 100%;
   margin: 0;
   padding-right: 30px;
-  padding-bottom: 53px;
+  padding-bottom: 31px;
   padding-left: 30px;
 }
 
 @media #{$tablet-widths} {
   .catalog {
     padding-top: 27px;
+    padding-bottom: 53px;
   }
 }
 

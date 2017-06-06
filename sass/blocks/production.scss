@@ -1,8 +1,13 @@
 .production {
   @include center;
+  @include margin-center();
+
   flex-direction: column;
-  width: 100%;
+  width: 260px;
   margin-bottom: 59px;
+  padding-top: 23px;
+
+  border: 1px solid $third-color;
 }
 
 .production__title {
@@ -11,22 +16,18 @@
   position: relative;
 
   box-sizing: border-box;
-  width: 260px;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 23px;
   padding-bottom: 24px;
   padding-left: 88px;
 
   color: $secondary-color;
-  border: 1px solid $third-color;
-  border-bottom: none;
 
   &::before {
     @include absolute-pseudo-element();
 
-    top: 34px;
-    left: 33px;
+    top: 11px;
+    left: 34px;
 
     width: 32px;
     height: 22px;
@@ -38,9 +39,6 @@
 .production__wrapper {
   @include center();
   position: relative;
-
-  width: 260px;
-  height: 150px;
 }
 
 .production__video {
@@ -53,8 +51,6 @@
   top: 50%;
   left: 50%;
 
-  padding: 0;
-
   background-color: transparent;
   border: none;
   transform: translate(-50%, -50%);
@@ -66,16 +62,12 @@
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  width: 260px;
   padding-top: 13px;
-  padding-right: 34px;
+  padding-right: 35px;
   padding-bottom: 31px;
   padding-left: 33px;
 
   color: $secondary-color;
-
-  border: 1px solid $third-color;
-  border-top: none;
 }
 
 .production__btn {
@@ -84,6 +76,8 @@
 
 @media #{$tablet-widths} {
   .production {
+    width: 668px;
+    padding-top: 0;
     margin-bottom: 63px;
   }
 
@@ -110,8 +104,6 @@
 
   .production__description {
     @include font(15px, 30px);
-
-    width: 668px;
     padding-right: 42px;
     padding-bottom: 45px;
     padding-left: 40px;
@@ -129,6 +121,7 @@
 
     align-items: flex-end;
     width: 1050px;
+    margin-bottom: 105px;
   }
 
   .production__title {
@@ -152,7 +145,6 @@
 
   .production__description {
     width: 368px;
-    margin-bottom: 42px;
     padding-top: 0;
     padding-right: 56px;
     padding-bottom: 59px;

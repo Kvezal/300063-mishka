@@ -18,7 +18,8 @@
   width: 185px;
   min-height: 80px;
   margin: 0;
-  padding-bottom: 8px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   border: none;
 
@@ -26,14 +27,18 @@
 }
 
 .page-footer__html-academy {
+  display: block;
   width: 27px;
   height: 34px;
-  margin-top: 3px;
 
   font-size: 0;
   vertical-align: top;
 
   background-color: #ff8800;
+
+  span {
+    display: block;
+  }
 }
 
 
@@ -47,14 +52,12 @@
   }
 
   .page-footer__copyright {
-    padding-bottom: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     min-height: 34px;
 
     border: none;
 
-    span {
-      display: block;
-    }
   }
 
   .page-footer__html-academy {

@@ -100,7 +100,7 @@
   }
 
   .catalog-item__buy {
-    margin-right: 4px;
+    margin-right: 5px;
   }
 }
 
@@ -123,6 +123,7 @@
   .catalog-item__description {
     flex-grow: 1;
     width: 316px;
+    padding-left: 25px;
   }
 
   .catalog-item__text {
@@ -131,6 +132,10 @@
 
   .catalog-item__price {
     padding-left: 0;
+  }
+
+  .catalog-item__buy {
+    margin-right: 6px;
   }
 }
 

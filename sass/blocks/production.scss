@@ -35,11 +35,17 @@
   }
 }
 
-.production__video {
+.production__wrapper {
+  @include center();
   position: relative;
 
   width: 260px;
   height: 150px;
+}
+
+.production__video {
+  width: 100%;
+  height: auto;
 }
 
 .production__play {
@@ -95,7 +101,7 @@
     }
   }
 
-  .production__video {
+  .production__wrapper {
     order: -1;
     width: 668px;
     height: 455px;
@@ -141,7 +147,7 @@
     }
   }
 
-  .production__video {
+  .production__wrapper {
     width: 682px;
     margin-right: auto;
   }

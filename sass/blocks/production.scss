@@ -36,7 +36,7 @@
   }
 }
 
-.production__wrapper {
+.production__video {
   @include center();
   position: relative;
 }
@@ -95,7 +95,7 @@
     }
   }
 
-  .production__wrapper {
+  .production__video {
     order: -1;
     width: 668px;
     height: 455px;
@@ -138,7 +138,7 @@
     }
   }
 
-  .production__wrapper {
+  .production__video {
     width: 682px;
     margin-right: auto;
   }

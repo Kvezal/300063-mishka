@@ -157,23 +157,21 @@
     width: 1050px;
     padding-top: 64px;
     padding-bottom: 96px;
-    display: flex;
-    flex-direction: row;
   }
 
   .featured__top {
-    position: relative;
+    position: absolute;
     z-index: 1;
 
-    width: 175px;
     margin-top: 60px;
+    margin-left: -27px;
   }
 
   .featured__title {
     @include font(53px, 57px);
 
     order: 1;
-    margin-left: 52px;
+    margin-left: 26px;
 
     white-space: nowrap;
   }
@@ -184,9 +182,11 @@
   }
 
   .featured__wrapper {
-    width: 875px;
+    box-sizing: border-box;
+    width: 1050px;
 //    height: 644px;
     padding-top: 0;
+    padding-left: 175px;
   }
 
   .featured__text {

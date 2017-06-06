@@ -106,6 +106,7 @@
   }
 
   .contacts__item {
+    display: inline-block;
     margin-right: 54px;
 
     &--address {
@@ -173,6 +174,7 @@
   }
 
   .contacts__item {
+    display: table-row;
     margin-right: 54px;
 
     &--address {

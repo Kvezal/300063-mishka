@@ -13,8 +13,19 @@
 @media #{$tablet-widths} {
   .promo-text {
     @include font(17px, 30px);
+
     width: 668px;
     margin-top: 74px;
+    margin-bottom: 72px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .promo-text {
+    width: 700px;
+    margin-top: 123px;
     margin-bottom: 72px;
     padding-right: 0;
     padding-left: 0;

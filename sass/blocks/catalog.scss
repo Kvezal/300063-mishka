@@ -15,3 +15,11 @@
     padding-top: 27px;
   }
 }
+
+@media #{$desktop-widths} {
+  .catalog {
+    flex-direction: row;
+    align-items: stretch;
+    padding-top: 76px;
+  }
+}

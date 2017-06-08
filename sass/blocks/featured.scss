@@ -1,6 +1,3 @@
-.featured {
-}
-
 .featured__inner {
   position: relative;
 
@@ -164,6 +161,11 @@
 }
 
 @media #{$desktop-widths} {
+  .featured {
+    display: flex;
+    justify-content: center;
+  }
+
   .featured__inner {
     justify-content: flex-start;
 

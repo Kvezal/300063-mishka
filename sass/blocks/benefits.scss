@@ -3,9 +3,9 @@
 }
 
 .benefits__wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 260px;
+  width: 100%;
+  padding-right: 9.4%;
+  padding-left: 9.3%;
 }
 
 .benefits__title {
@@ -15,9 +15,6 @@
 
 .benefits__list {
   @include clear-list();
-
-  display: flex;
-  flex-direction: column;
 }
 
 .benefits__item {
@@ -35,55 +32,61 @@
 
     background-color: #ff8800;
   }
+
   &--flower {
     &::after {
       top: 10px;
-      left: 9px;
+      left: 8px;
 
       width: 33px;
       height: 38px;
     }
   }
+
   &--cash {
     &::after {
       top: 12px;
-      left: 2px;
+      left: 0;
 
       width: 47px;
       height: 27px;
     }
   }
+
   &--heart {
     &::after {
       top: 17px;
-      left: 9px;
+      left: 7px;
 
       width: 34px;
       height: 27px;
     }
   }
+
   &--clew {
     &::after {
       top: 14px;
-      left: 5px;
+      left: 3px;
 
       width: 35px;
       height: 34px;
     }
   }
+
   &--rocket {
     &::after {
       top: 15px;
-      left: -4px;
+      left: -6px;
 
       width: 55px;
       height: 23px;
     }
   }
+
   &--present {
     &::after {
       top: 13px;
-      left: 5px;
+      left: 3px;
 
       width: 33px;
       height: 32px;
@@ -92,10 +95,13 @@
 }
 
 @media #{$tablet-widths} {
+
   .benefits__wrapper {
     flex-direction: column;
     width: 668px;
+    padding-right: 0;
     padding-bottom: 37px;
+    padding-left: 0;
   }
 
   .benefits__title {
@@ -106,6 +112,7 @@
   }
 
   .benefits__list {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -113,7 +120,7 @@
   .benefits__item {
     @include font(20px, 22px);
 
-    width: 334px;
+    width: 50%;
     margin-bottom: 46px;
 
     &--cash {

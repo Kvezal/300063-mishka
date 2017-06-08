@@ -54,11 +54,15 @@
 }
 
 .featured__image {
-  width: 260px;
-  height: 315px;
+  width: 100%;
+  height: auto;
   margin-top: 28px;
   margin-right: auto;
   margin-left: auto;
+
+  img {
+    width: 100%;
+  }
 }
 
 .featured__bottom {

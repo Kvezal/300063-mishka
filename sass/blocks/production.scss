@@ -136,6 +136,11 @@
 }
 
 @media #{$desktop-widths} {
+  .production {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .production__wrapper {
     @include margin-center();
 

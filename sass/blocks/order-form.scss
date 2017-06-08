@@ -3,12 +3,13 @@
 
   flex-direction: column;
   box-sizing: border-box;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 9.4%;
+  padding-left: 9.5%;
 }
 
 .order-form__item {
   display: flex;
+  width: 100%;
   padding: 0;
 
   border: none;
@@ -27,7 +28,7 @@
 }
 
 .order-form__wrapper {
-  width: 260px;
+  width: 100%;
   padding: 0;
 }
 
@@ -78,7 +79,7 @@
   position: relative;
 
   display: block;
-  padding-left: 63px;
+  padding-left: 62px;
   margin-bottom: 25px;
 
   &:last-of-type {
@@ -89,7 +90,7 @@
     @include absolute-pseudo-element();
 
     top: -9px;
-    left: 0;
+    left: 1px;
 
     box-sizing: border-box;
     width: 40px;
@@ -190,7 +191,7 @@
 
   display: flex;
   flex-direction: column;
-  width: 260px;
+  width: 100%;
   padding-bottom: 55px;
 }
 

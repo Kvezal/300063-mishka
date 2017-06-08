@@ -1,13 +1,11 @@
 .contacts {
-  @include center();
-  flex-direction: column;
 }
 
 .contacts__wrapper {
   display: flex;
   flex-direction: column;
-  width: 320px;
-  padding-top: 36px;
+  width: 100%;
+  padding-top: 86px;
   padding-bottom: 39px;
 }
 
@@ -15,16 +13,18 @@
   @include font-set(700, 18px, 30px);
 
   margin: 0;
-  padding-right: 30px;
-  padding-left: 28px;
+  padding-right: 9.4%;
+  padding-left: 9.3%;
 }
 
 .contacts__inner {
   @include font(15px, 30px);
 
   display: table;
-  padding-right: 30px;
-  padding-left: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 9.4%;
+  padding-left: 9.3%;
 }
 
 .contacts__item {
@@ -34,7 +34,7 @@
 .contacts__field {
   display: table-cell;
   padding-top: 28px;
-  width: 76px;
+  width: 29.5%;
 }
 
 .contacts__link {
@@ -58,7 +58,7 @@
 }
 
 .contacts__btn {
-  width: 260px;
+  width: 81%;
   align-self: center;
 }
 
@@ -76,7 +76,7 @@
     @include font(43px, 50px);
 
     box-sizing: border-box;
-    width: 668px;
+    width: 676px;
     position: relative;
     padding-top: 15px;
     padding-right: 100px;
@@ -85,7 +85,7 @@
     &::after {
       @include absolute-pseudo-element();
       top: 0;
-      right: 0;
+      right: 7px;
 
       width: 47px;
       height: 81px;
@@ -107,12 +107,18 @@
 
   .contacts__item {
     display: inline-block;
-    margin-right: 54px;
+    margin-right: 52px;
 
     &--address {
       margin-right: 0;
     }
   }
+
+  .contacts__field {
+  display: table-cell;
+  padding-top: 28px;
+  width: 27%;
+}
 
   .contacts__link {
     display: table-cell;

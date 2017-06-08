@@ -1,21 +1,25 @@
 .catalog {
   @include center();
+  padding-bottom: 31px;
+}
+
+.catalog__wrapper {
+  width: 100%;
 
   box-sizing: border-box;
-  width: 100%;
-  margin: 0;
   padding-right: 9.4%;
-  padding-bottom: 31px;
   padding-left: 9.4%;
 }
 
 @media #{$tablet-widths} {
   .catalog {
     padding-top: 27px;
-    padding-right: 6.4%;
     padding-bottom: 53px;
-    padding-left: 6.6%;
+  }
 
+  .catalog__wrapper {
+    padding-right: 6.4%;
+    padding-left: 6.6%;
   }
 }
 
@@ -33,6 +37,8 @@
     flex-wrap: wrap;
     align-items: stretch;
     width: 1050px;
+    padding-right: 0;
     padding-bottom: 57px;
+    padding-left: 0;
   }
 }

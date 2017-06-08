@@ -13,10 +13,12 @@
 
   flex-grow: 1;
   flex-direction: row;
+  justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
   min-height: 103px;
-  padding-left: 28px;
+  padding-right: 9.4%;
+  padding-left: 9.1%;
   color: $eighth-color;
   text-decoration: none;
 
@@ -71,7 +73,6 @@
   .categories__link {
     @include font(20px, 30px);
     min-height: 118px;
-    justify-content: space-between;
 
     &--interior {
       padding-left: 35px;

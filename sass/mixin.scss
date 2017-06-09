@@ -35,3 +35,20 @@
   justify-content: center;
   align-items: center;
 }
+
+@mixin hover() {
+  &:hover {
+    opacity: .6;
+  }
+}
+
+@mixin active() {
+  &:active {
+    opacity: .3;
+  }
+}
+
+@mixin states() {
+  @include hover();
+  @include active();
+}

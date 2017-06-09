@@ -1,11 +1,5 @@
 .page-header {
-  position: relative;
-  z-index: 1;
-
-  display: flex;
+  @include center();
   flex-direction: column;
-  align-items: center;
   width: 100%;
-
-  background-color: #ffffff;
 }

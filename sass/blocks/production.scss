@@ -1,84 +1,187 @@
 .production {
+  box-sizing: border-box;
+  width: 100%;
+  padding-right: 9.9%;
+  padding-left: 9.4%;
+}
+
+.production__wrapper {
+  @include center;
   @include margin-center();
+
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 58px;
+  padding-top: 23px;
+
+  border: 1px solid $third-color;
+}
+
+.production__title {
+  @include font(17px, 24px);
+
+  position: relative;
+
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-bottom: 24px;
+  padding-left: 88px;
+
+  color: $secondary-color;
+
+  &::before {
+    @include absolute-pseudo-element();
+
+    top: 11px;
+    left: 34px;
+
+    width: 32px;
+    height: 22px;
+
+    background-color: #ff8800;
+  }
+}
+
+.production__video {
+  @include center();
+
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  video {
+    width: 100%;
+  }
+}
+
+.production__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  background-color: transparent;
+  border: none;
+  transform: translate(-50%, -50%);
+}
+
+.production__description {
+  @include font(13px, 24px);
 
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   width: 100%;
+  padding-top: 15px;
+  padding-right: 12.5%;
+  padding-bottom: 32px;
+  padding-left: 13.3%;
 
-  &__title {
-    @include margin-center();
+  color: $secondary-color;
+}
 
-    position: relative;
+.production__btn {
+  margin-top: 12px;
+}
 
-    box-sizing: border-box;
-    width: 260px;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-top: 23px;
-    padding-bottom: 24px;
-    padding-left: 88px;
+@media #{$tablet-widths} {
+  .production {
+    margin-bottom: 63px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+  }
 
-    font-size: 17px;
-    line-height: 24px;
-    color: $secondary-color;
+  .production__wrapper {
+    padding-top: 0;
+  }
 
-    border: 1px solid $third-color;
-    border-bottom: none;
+  .production__title {
+    width: 668px;
+    padding-top: 38px;
+    padding-bottom: 2px;
+    padding-left: 105px;
+
+    font-size: 20px;
 
     &::before {
-      @include absolute-pseudo-element();
-
-      top: 34px;
-      left: 33px;
-
-      width: 32px;
-      height: 22px;
-
-      background-color: #ff8800;
+      top: 38px;
+      left: 40px;
     }
   }
 
-  &__video {
+  .production__video {
+    order: -1;
+    height: 455px;
+    background-color: $third-color;
+
+    video {
+      width: auto;
+    }
+  }
+
+  .production__description {
+    @include font(15px, 30px);
+
+    width: 100%;
+    padding-right: 42px;
+    padding-bottom: 45px;
+    padding-left: 40px;
+  }
+
+  .production__btn {
+    margin-top: 20px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .production {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .production__wrapper {
     @include margin-center();
 
-    position: relative;
-    width: 260px;
-    height: 150px;
+    align-items: flex-end;
+    width: 1050px;
+    margin-bottom: 105px;
   }
 
-  &__play {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  .production__title {
+    width: 368px;
+    margin-top: -455px;
+    padding-top: 95px;
+    padding-right: 56px;
+    padding-bottom: 0;
+    padding-left: 78px;
 
-    padding: 0;
-    transform: translate(-50%, -50%);
-    background-color: transparent;
-    border: none;
+    &::before {
+      top: 46px;
+      left: 80px;
+    }
   }
 
-  &__description {
-    @include margin-center();
-
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 260px;
-    margin-bottom: 58px;
-    padding-top: 13px;
-    padding-right: 34px;
-    padding-bottom: 32px;
-    padding-left: 33px;
-
-    font-size: 13px;
-    line-height: 24px;
-    color: $secondary-color;
-
-    border: 1px solid $third-color;
-    border-top: none;
+  .production__video {
+    width: 682px;
+    margin-right: auto;
   }
 
-  &__btn {
-    margin-top: 13px;
+  .production__description {
+    width: 368px;
+    padding-top: 0;
+    padding-right: 56px;
+    padding-bottom: 59px;
+    padding-left: 79px;
+  }
+
+  .production__text {
+    margin-top: 33px;
+    margin-bottom: 0;
+  }
+
+  .production__btn {
+    margin-top: 46px;
   }
 }

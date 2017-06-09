@@ -1,14 +1,59 @@
 .intro {
-  width: 320px;
+  align-items: center;
+  width: 100%;
   min-height: 176px;
 
   background-color: $fourth-color;
+  border-top: 1px solid $eleventh-color;
 
   &--index {
     min-height: 282px;
 
     background-image: url(../img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
-    background-position: 50% -18px;
+    background-position: 50% -19px;
+  }
+}
+
+.intro__text {
+  display: none;
+}
+
+@media #{$tablet-widths} {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin-top: -42px;
+
+    &--index {
+      min-height: 745px;
+    }
+  }
+
+  .intro__text {
+    @include font(15px, 24px);
+
+    display: block;
+    box-sizing: border-box;
+    width: 751px;
+    margin-top: 0;
+    padding-top: 17px;
+    padding-right: 41px;
+    padding-left: 425px;
+
+
+    text-align: right;
+
+  }
+}
+
+@media #{$desktop-widths} {
+  .intro {
+    border: none;
+  }
+
+  .intro__text {
+    width: 1133px;
+    border-top: 1px solid $eleventh-color;
   }
 }

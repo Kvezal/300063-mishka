@@ -1,12 +1,39 @@
 .main-title {
   @include margin-center();
+  @include font-set(700, 27px, 30px);
 
   width: 260px;
   margin-top: 70px;
-
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 30px;
   text-align: center;
   color: $secondary-color;
+}
+
+@media #{$tablet-widths} {
+  .main-title {
+    @include font(43px, 50px);
+
+    width: 700px;
+    margin-top: 37px;
+    margin-bottom: 80px;
+
+    &--index {
+      margin-top: 97px;
+      margin-bottom: 220px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .main-title {
+    @include font(53px, 57px);
+
+    width: 700px;
+    margin-top: 37px;
+    margin-bottom: 102px;
+
+    &--index {
+      margin-top: 97px;
+      margin-bottom: 220px;
+    }
+  }
 }

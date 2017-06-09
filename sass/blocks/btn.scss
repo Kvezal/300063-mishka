@@ -1,10 +1,11 @@
 .btn {
-  @include font-set(700, 17px, 48px);
+  @include font-set(700, 18px, 20px);
 
   display: block;
   box-sizing: border-box;
   width: 100%;
   min-height: 52px;
+  padding-top: 13px;
 
   font-family: $font-primary;
   text-align: center;
@@ -15,4 +16,12 @@
   background-color: transparent;
   border: 2px solid $primary-color;
   cursor: pointer;
+}
+
+@media #{$tablet-widths} {
+  .btn {
+    padding-top: 14px;
+
+    font-size: 17px;
+  }
 }

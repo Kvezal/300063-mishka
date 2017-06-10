@@ -43,6 +43,13 @@
   text-decoration: none;
 
   border-bottom: 1px solid $seventh-color;
+
+  transition-duration: .15s;
+
+  &:active {
+    color: $seventh-color-active;
+    border-color: $seventh-color-active;
+  }
 }
 
 .contacts__text {
@@ -172,6 +179,9 @@
   }
 
   .contacts__inner {
+    position: relative;
+    z-index: 1;
+
     flex-direction: column;
     order: 1;
     width: 50%;
@@ -185,6 +195,18 @@
 
     &--address {
       margin-top: 29px;
+    }
+  }
+
+  .contacts__link {
+    &:hover {
+      color: $seventh-color;
+      border-color: $seventh-color;
+    }
+
+    &:active {
+      color: $seventh-color-active;
+      border-color: $seventh-color-active;
     }
   }
 

@@ -122,6 +122,8 @@
       padding-left: 37px;
 
       &:hover {
+        padding-bottom: 5px;
+
         box-shadow: 0 -5px $fifth-color;
       }
     }
@@ -130,7 +132,10 @@
       padding-right: 34px;
       padding-left: 36px;
 
+
       &:hover {
+        padding-bottom: 5px;
+
         box-shadow: 0 -5px $sixth-color;
       }
     }

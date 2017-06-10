@@ -16,6 +16,14 @@
   background-color: transparent;
   border: 2px solid $primary-color;
   cursor: pointer;
+
+  transition-duration: .15s;
+
+  &:active {
+    color: $eighth-color-active;
+
+    background-color: $primary-color;
+  }
 }
 
 @media #{$tablet-widths} {
@@ -23,5 +31,21 @@
     padding-top: 14px;
 
     font-size: 17px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .btn {
+    &:hover {
+      color: $eighth-color;
+
+      background-color: $primary-color;
+    }
+
+    &:active {
+      color: $eighth-color-active;
+
+      background-color: $primary-color;
+    }
   }
 }

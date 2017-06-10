@@ -200,6 +200,9 @@
   }
 
   .contacts__btn {
+    position: relative;
+    z-index: 1;
+
     order: 1;
     width: 230px;
     margin-top: -52px;

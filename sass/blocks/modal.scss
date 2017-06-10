@@ -47,15 +47,15 @@
   justify-content: space-between
 }
 
-.modal__radio-input {
+.modal__input-radio {
   display: none;
 
-  &:checked + .modal__radio-label {
+  &:checked + .modal__label-radio {
     border-color: $fifteenth-color;
   }
 }
 
-.modal__radio-label {
+.modal__label-radio {
   @include font(17px, 48px)
 
   flex-grow: 1;
@@ -106,7 +106,7 @@
 }
 
 @media #{$desktop-widths} {
-  .modal__radio-label {
+  .modal__label-radio {
     &:hover {
       border-color: $sixteenth-color;
     }

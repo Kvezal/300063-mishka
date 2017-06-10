@@ -32,20 +32,29 @@
     padding-right: 36px;
 
     background-color: $fifth-color;
+    box-shadow: 0 0 $fifth-color;
 
-    &:active {
-      color: $eighth-color-active;
-    }
+      &:active {
+        padding-bottom: 5px;
+
+        color: $eighth-color-active;
+
+        box-shadow: 0 -5px $fifth-color;
+      }
   }
-
 
   &--toys {
     padding-right: 26px;
 
     background-color: $sixth-color;
+    box-shadow: 0 -0px $sixth-color;
 
     &:active {
+      padding-bottom: 5px;
+
       color: $eighth-color-active;
+
+      box-shadow: 0 -5px $sixth-color;
     }
   }
 }
@@ -89,34 +98,11 @@
 
     &--interior {
       padding-left: 35px;
-
-      box-shadow: 0 0px $fifth-color;
-
-      &:hover {
-        position: relative;
-        z-index: 1;
-
-        box-shadow: 0 5px $fifth-color;
-      }
-
-      &:active {
-        color: $eighth-color-active;
-      }
     }
 
     &--toys {
       padding-left: 36px;
       padding-right: 34px;
-
-      box-shadow: 0 0px $sixth-color;
-
-      &:hover {
-        box-shadow: 0 5px $sixth-color;
-      }
-
-      &:active {
-        color: $eighth-color-active;
-      }
     }
   }
 }
@@ -134,11 +120,19 @@
 
     &--interior {
       padding-left: 37px;
+
+      &:hover {
+        box-shadow: 0 -5px $fifth-color;
+      }
     }
 
     &--toys {
       padding-right: 34px;
       padding-left: 36px;
+
+      &:hover {
+        box-shadow: 0 -5px $sixth-color;
+      }
     }
   }
 }

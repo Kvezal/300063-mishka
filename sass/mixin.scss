@@ -27,28 +27,13 @@
 }
 
 @mixin transition($property, $time, $transition) {
-  transition: $property, $time, $transition;
+  transition-property: $property;
+  transition-duration: $time;
+  transition-timing-function: $transition;
 }
 
 @mixin center() {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@mixin hover() {
-  &:hover {
-    opacity: .6;
-  }
-}
-
-@mixin active() {
-  &:active {
-    opacity: .3;
-  }
-}
-
-@mixin states() {
-  @include hover();
-  @include active();
 }

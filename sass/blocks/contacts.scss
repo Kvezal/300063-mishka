@@ -1,6 +1,4 @@
 .contacts__wrapper {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   padding-top: 86px;
   padding-bottom: 39px;
@@ -68,8 +66,8 @@
 }
 
 .contacts__btn {
+  @include margin-center();
   width: 81%;
-  align-self: center;
 }
 
 @media #{$tablet-widths} {
@@ -78,6 +76,7 @@
     justify-content: center;
   }
   .contacts__wrapper {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
@@ -151,6 +150,8 @@
 
   .contacts__btn {
     width: 230px;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

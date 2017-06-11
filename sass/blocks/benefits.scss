@@ -1,8 +1,5 @@
-.benefits {
-  @include center();
-}
-
 .benefits__wrapper {
+  box-sizing: border-box;
   width: 100%;
   padding-right: 9.4%;
   padding-left: 9.3%;
@@ -95,6 +92,9 @@
 }
 
 @media #{$tablet-widths} {
+  .benefits {
+    @include center();
+  }
 
   .benefits__wrapper {
     flex-direction: column;

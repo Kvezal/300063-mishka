@@ -1,10 +1,7 @@
 .order-form {
-  @include center();
-
-  flex-direction: column;
   box-sizing: border-box;
   padding-right: 9.4%;
-  padding-left: 9.5%;
+  padding-left: 9%;
 }
 
 .order-form__item {
@@ -90,7 +87,7 @@
     @include absolute-pseudo-element();
 
     top: -9px;
-    left: 1px;
+    left: -1px;
 
     box-sizing: border-box;
     width: 40px;
@@ -231,9 +228,9 @@
 }
 
 .order-form__btn {
-  padding: 0;
+  @include font(17px, 20px);
 
-  line-height: 20px;
+  padding: 0;
 }
 
 
@@ -461,8 +458,6 @@
 
   .order-form__wrapper {
     width: 1050px;
-
-
   }
 
   .order-form__title {

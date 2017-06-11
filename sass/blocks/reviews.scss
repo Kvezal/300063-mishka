@@ -1,11 +1,9 @@
 .reviews {
-  display: flex;
-  justify-content: center;
-
   padding-top: 37px;
 }
 
 .reviews__wrapper {
+  box-sizing: border-box;
   width: 100%;
   padding-left: 9.4%;
   padding-right: 9.4%;
@@ -131,6 +129,8 @@
 
 @media #{$tablet-widths} {
   .reviews {
+    display: flex;
+    justify-content: center;
     padding-top: 0;
     padding-bottom: 0;
   }

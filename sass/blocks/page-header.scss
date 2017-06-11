@@ -1,5 +1,10 @@
 .page-header {
-  @include center();
-  flex-direction: column;
   width: 100%;
+}
+
+@media #{$tablet-widths} {
+  .page-header {
+    @include center();
+    flex-direction: column;
+  }
 }

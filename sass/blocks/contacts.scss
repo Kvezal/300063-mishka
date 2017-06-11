@@ -95,14 +95,26 @@
     padding-right: 100px;
     padding-left: 0px;
 
-    &::after {
+    &::before {
       @include absolute-pseudo-element();
       top: 0;
-      right: 7px;
+      right: 50px;
 
-      width: 47px;
+      width: 4px;
       height: 81px;
-      background-color: #ff8800;
+      background-color: $secondary-color;
+    }
+
+    &::after {
+      @include absolute-pseudo-element();
+      top: 3px;
+      right: 6px;
+
+      border: 20px solid $twelfth-color;
+      border-top-color: transparent;
+      border-right-width: 0;
+      border-bottom-color: transparent;
+      border-left-width: 40px;
     }
   }
 
@@ -173,9 +185,14 @@
     padding-right: 10px;
     padding-left: 170px;
 
-    &::after {
+    &::before {
       top: -8px;
       left: 63px;
+    }
+
+    &::after {
+      top: -5px;
+      left: 71px;
     }
   }
 

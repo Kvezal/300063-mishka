@@ -95,6 +95,9 @@
 
 .production__btn {
   margin-top: 12px;
+  padding-top: 14px;
+
+  font-size: 17px;
 }
 
 @media #{$tablet-widths} {
@@ -118,7 +121,7 @@
 
     &::before {
       top: 38px;
-      left: 40px;
+      left: 41px;
     }
   }
 

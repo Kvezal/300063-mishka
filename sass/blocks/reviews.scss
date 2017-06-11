@@ -192,6 +192,22 @@
 
   .reviews__toggle {
     width: 83px;
+
+    &--back {
+      &::before {
+        transform: translate(-50%, -50%) translateX(-4px);
+      }
+
+      &::after {
+        transform: translate(-27px, -50%) rotate(45deg);
+      }
+    }
+
+    &--next {
+      &::after {
+        transform: translate(0px, -50%) rotate(45deg);
+      }
+    }
   }
 
   .reviews__btn {

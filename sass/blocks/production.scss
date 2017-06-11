@@ -71,6 +71,11 @@
   background-color: transparent;
   border: none;
   transform: translate(-50%, -50%);
+  transition-duration: .15s;
+
+  &:active {
+    transform: translate(-50%, -50%) scale(.8);
+  }
 }
 
 .production__description {
@@ -165,28 +170,39 @@
 
   .production__title {
     width: 368px;
-    margin-top: -453px;
-    padding-top: 93px;
+    margin-top: -454px;
+    padding-top: 95px;
     padding-right: 56px;
     padding-bottom: 0;
     padding-left: 78px;
 
     &::before {
-      top: 44px;
+      top: 46px;
       left: 80px;
     }
   }
 
   .production__video {
     width: 682px;
+    height: 454px;
     margin-right: auto;
+  }
+
+  .production__play {
+    &:hover {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+
+    &:active {
+      transform: translate(-50%, -50%) scale(.8);
+    }
   }
 
   .production__description {
     width: 368px;
     padding-top: 0;
     padding-right: 56px;
-    padding-bottom: 59px;
+    padding-bottom: 60px;
     padding-left: 79px;
   }
 

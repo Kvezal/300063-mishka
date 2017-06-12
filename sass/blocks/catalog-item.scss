@@ -1,6 +1,12 @@
 .catalog-item {
   box-sizing: border-box;
   margin-top: 30px;
+
+  transition-duration: .25s;
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+  }
 }
 
 .catalog-item__link {
@@ -28,6 +34,12 @@
   @include font-set(700, 17px, 24px);
   color: $secondary-color;
   text-decoration: none;
+
+  transition-duration: .15s;
+
+  &:active {
+    color: $secondary-color-active;
+  }
 }
 
 .catalog-item__text {
@@ -118,6 +130,14 @@
     &:last-of-type {
       margin-right: 0;
     }
+
+    &:hover {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, .1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, .1);
+    }
   }
 
   .catalog-item__link {
@@ -129,6 +149,16 @@
     flex-grow: 1;
     width: 316px;
     padding-left: 25px;
+  }
+
+  .catalog-item__name {
+    &:hover {
+      color: $secondary-color-hover;
+    }
+
+    &:active {
+      color: $secondary-color-active;
+    }
   }
 
   .catalog-item__text {

@@ -27,7 +27,9 @@
 }
 
 @mixin transition($property, $time, $transition) {
-  transition: $property, $time, $transition;
+  transition-property: $property;
+  transition-duration: $time;
+  transition-timing-function: $transition;
 }
 
 @mixin center() {

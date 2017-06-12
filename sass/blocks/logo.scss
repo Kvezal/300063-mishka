@@ -1,6 +1,6 @@
 .logo {
   @include margin-center();
-
+  @include transition(opacity, .15s, ease);
   display: flex;
   flex-direction: column;
   width: 86px;
@@ -9,6 +9,10 @@
 
   &--footer {
     display: none;
+  }
+
+  &[href]:active {
+    opacity: .3;
   }
 }
 
@@ -46,6 +50,14 @@
       width: 185px;
       height: auto;
       margin: 0;
+    }
+
+    &[href]:hover {
+      opacity: .6;
+    }
+
+    &[href]:active {
+      opacity: .3;
     }
   }
 }

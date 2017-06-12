@@ -54,13 +54,13 @@
         <li class="categories__item">
           <a class="categories__link  categories__link--interior" href="#">
             <span class="categories__span  categories__span--interior">Предметы интерьера</span>
-            <img src="" width="41" height="62" alt="">
+            <img src="http://placehold.it/41x62" width="41" height="62" alt="">
           </a>
         </li>
         <li class="categories__item">
           <a class="categories__link  categories__link--toys" href="#">
             <span  class="categories__span  categories__span--toys">Детские игрушки</span>
-            <img src="" width="61" height="61" alt="">
+            <img src="http://placehold.it/61x61" width="61" height="61" alt="">
           </a>
         </li>
       </ul>
@@ -190,9 +190,27 @@
     </p>
     <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span>Разработано</span>
-      <img src="" width="27" height="34" alt="">
+      <img src="http://placehold.it/27x34" width="27" height="34" alt="">
     </a>
   </footer>
+
+  <div class="overlay"></div>
+  <div class="modal">
+    <h2 class="modal__title">Добавить в корзину</h2>
+    <p class="modal__text">Выберите размер:</p>
+    <form class="modal__form" action="https://echo.htmlacademy.ru/" method="post">
+      <input class="modal__input-radio" type="radio" name="size" id="size-s" value="s" checked>
+      <label class="modal__label-radio" for="size-s">S</label>
+
+      <input class="modal__input-radio" type="radio" name="size" id="size-m" value="m">
+      <label class="modal__label-radio" for="size-m">M</label>
+
+      <input class="modal__input-radio" type="radio" name="size" id="size-l" value="l">
+      <label class="modal__label-radio" for="size-l">L</label>
+
+      <button class="modal__btn  btn" type="button">Добавить</button>
+    </form>
+  </div>
   <script src="js/scripts.js"></script>
 </body>
 

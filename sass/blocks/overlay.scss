@@ -1,0 +1,21 @@
+.overlay {
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: $eighth-color;
+  visibility: hidden;
+  opacity: 0;
+
+  transition-duration: .3s;
+  transition-delay: .2s;
+}
+
+.overlay--active {
+  visibility: visible;
+  opacity: .9;
+}

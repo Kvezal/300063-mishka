@@ -22,18 +22,40 @@
   color: $eighth-color;
   text-decoration: none;
 
+  transition-duration: .15s;
+
   img {
     flex-shrink: 0;
   }
 
   &--interior {
-    background-color: $fifth-color;
     padding-right: 36px;
+
+    background-color: $fifth-color;
+    box-shadow: 0 0 $fifth-color;
+
+    &:active {
+      padding-bottom: 5px;
+
+      color: $eighth-color-active;
+
+      box-shadow: 0 -5px $fifth-color;
+    }
   }
 
   &--toys {
-    background-color: $sixth-color;
     padding-right: 26px;
+
+    background-color: $sixth-color;
+    box-shadow: 0 -0px $sixth-color;
+
+    &:active {
+      padding-bottom: 5px;
+
+      color: $eighth-color-active;
+
+      box-shadow: 0 -5px $sixth-color;
+    }
   }
 }
 
@@ -98,11 +120,24 @@
 
     &--interior {
       padding-left: 37px;
+
+      &:hover {
+        padding-bottom: 5px;
+
+        box-shadow: 0 -5px $fifth-color;
+      }
     }
 
     &--toys {
-      padding-left: 36px;
       padding-right: 34px;
+      padding-left: 36px;
+
+
+      &:hover {
+        padding-bottom: 5px;
+
+        box-shadow: 0 -5px $sixth-color;
+      }
     }
   }
 }

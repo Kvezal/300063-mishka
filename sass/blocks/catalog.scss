@@ -1,12 +1,10 @@
 .catalog {
-  @include center();
   padding-bottom: 31px;
 }
 
 .catalog__wrapper {
-  width: 100%;
-
   box-sizing: border-box;
+  width: 100%;
   padding-right: 9.4%;
   padding-left: 9.4%;
 }
@@ -25,6 +23,8 @@
 
 @media #{$desktop-widths} {
   .catalog {
+    @include center();
+
     padding-top: 76px;
     padding-right: 0;
     padding-bottom: 0;

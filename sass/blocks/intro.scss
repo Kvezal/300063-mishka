@@ -1,5 +1,4 @@
 .intro {
-  align-items: center;
   width: 100%;
   min-height: 176px;
 
@@ -23,6 +22,7 @@
   .intro {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: -42px;
 
     &--index {

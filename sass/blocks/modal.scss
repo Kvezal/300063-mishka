@@ -20,6 +20,8 @@
   visibility: hidden;
   opacity: 0;
 
+  transition-duration: .3s;
+
   &--active {
     transform: translate(-50%, -50%) scale(1);
     visibility: visible;

@@ -10,6 +10,9 @@
   background-color: $eighth-color;
   visibility: hidden;
   opacity: 0;
+
+  transition-duration: .3s;
+  transition-delay: .2s;
 }
 
 .overlay--active {

@@ -7,7 +7,7 @@
 
   &--index {
     min-height: 282px;
-
+    background-color: $seventeenth-color;
     background-image: url(../img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position: 50% -19px;
@@ -35,10 +35,11 @@
 
     display: block;
     box-sizing: border-box;
-    width: 751px;
+    width: 100%;
+    max-width: 1150px;
     margin-top: 0;
     padding-top: 17px;
-    padding-right: 41px;
+    padding-right: 50px;
     padding-left: 425px;
 
 
@@ -53,7 +54,6 @@
   }
 
   .intro__text {
-    width: 1133px;
     border-top: 1px solid $eleventh-color;
   }
 }

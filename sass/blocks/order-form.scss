@@ -1,6 +1,6 @@
 .order-form {
   box-sizing: border-box;
-  padding-right: 9.4%;
+  padding-right: 9.9%;
   padding-left: 9%;
 }
 
@@ -32,11 +32,26 @@
 .order-form__title {
   @include font(17px, 17px);
 
+  position: relative;
   margin: 0;
+  margin-left: -2px;
   margin-bottom: 34px;
 
   color: $fifth-color;
   text-transform: uppercase;
+
+  &::before {
+    @include absolute-pseudo-element();
+
+    top: 8px;
+    right: 0;
+    z-index: -1;
+
+    width: 76%;
+    height: 1px;
+
+    background-color: $fifth-color;
+  }
 
   &--name {
     margin-bottom: 28px;
@@ -49,6 +64,10 @@
   &--email {
     margin-top: 10px;
     margin-bottom: 7px;
+
+    &::before {
+      width: 69%;
+    }
   }
 
   &--addit {
@@ -299,6 +318,10 @@
     &--addit {
       margin-top: 16px;
     }
+
+    &::before {
+      display: none;
+    }
   }
 
   .order-form__group {
@@ -488,6 +511,8 @@
   }
 
   .order-form__label-radio {
+    cursor: pointer;
+
     &:hover::before {
       border-color: $seventh-color;
     }
@@ -502,6 +527,8 @@
     padding-left: 80px;
     margin-right: 96px;
     margin-bottom: 57px;
+
+    cursor: pointer;
 
     &:nth-of-type(2n) {
       margin-right: 96px;
@@ -519,6 +546,8 @@
   .order-form__label {
     padding-right: 25px;
     padding-left: 2px;
+
+    cursor: pointer;
 
     &--patronym {
       padding-right: 33px;

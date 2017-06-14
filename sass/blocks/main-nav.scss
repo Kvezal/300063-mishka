@@ -144,16 +144,16 @@
   &--desktop {
     display: none;
   }
+}
 
-  svg {
-    position: absolute;
-    top: 31px;
-    left: 23%;
+.main-nav__svg {
+  position: absolute;
+  top: 31px;
+  left: 23%;
 
-    margin-left: -44px;
+  margin-left: -44px;
 
-    background-color: #ff8800;
-  }
+  background-color: #ff8800;
 }
 
 .main-nav__link {
@@ -221,25 +221,11 @@
 
       border-right: 1px solid $third-color;
       border-left: 1px solid $third-color;
-
-      svg {
-        top: 36px;
-        left: 32px;
-
-        margin-left: 0;
-      }
     }
 
     &--cart {
       order: 0;
-      padding-right: 0;
-
-      svg {
-        top: 35px;
-        left: 31px;
-
-        margin-left: 0;
-      }
+      padding-right: 0
     }
   }
 
@@ -264,6 +250,22 @@
       min-height: 88px;
       margin-top: 0;
       padding-left: 82px;
+    }
+  }
+
+  .main-nav__svg {
+    &--search {
+      top: 36px;
+      left: 32px;
+
+      margin-left: 0;
+    }
+
+    &--cart {
+      top: 35px;
+      left: 31px;
+
+      margin-left: 0;
     }
   }
 }

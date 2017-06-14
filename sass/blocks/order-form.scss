@@ -27,6 +27,10 @@
 .order-form__wrapper {
   width: 100%;
   padding: 0;
+
+  &--contacts {
+    position: relative;
+  }
 }
 
 .order-form__title {
@@ -203,6 +207,20 @@
 
   &:focus {
     border-bottom: 2px solid $seventh-color;
+  }
+}
+
+.order-form__svg {
+  position: absolute;
+
+  &--tel {
+    top: 35px;
+    right: 8px;
+  }
+
+  &--email {
+    bottom: 16px;
+    right: 4px;
   }
 }
 
@@ -419,6 +437,18 @@
     }
   }
 
+  .order-form__svg {
+    &--tel {
+      top: -5px;
+      right: 31px;
+    }
+
+    &--email {
+      bottom: 15px;
+      right: 27px;
+    }
+  }
+
   .order-form__textarea {
     @include font(19px, 19px);
     width: 501px;
@@ -579,6 +609,18 @@
 
     &:hover {
       border-bottom: 2px solid $seventh-color;
+    }
+  }
+
+  .order-form__svg {
+    &--tel {
+      top: -5px;
+      right: 183px;
+    }
+
+    &--email {
+      bottom: 15px;
+      right: 179px;
     }
   }
 

@@ -6,6 +6,9 @@
   <title>HTML Academy: Мишка | Каталог</title>
   <link href="css/style.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="js/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <script src="js/picturefill.min.js"></script>
 </head>
 
 <body>
@@ -15,7 +18,11 @@
       <ul class="main-nav__list  main-nav__list--nojs">
         <li class="main-nav__item  main-nav__item--logo">
           <a class="logo" href="index.html">
-            <img src="img/logo-mobile.svg" alt="Логотип 'Mishka'" width="86" height="35">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип 'Mishka'">
+            </picture>
           </a>
         </li>
         <li class="main-nav__item  main-nav__item--border-right">
@@ -25,10 +32,18 @@
           <a class="main-nav__link" href="form.html">Вязание на заказ</a>
         </li>
         <li class="main-nav__item  main-nav__item--search">
-          <a class="main-nav__link  main-nav__link--search" href="#">Поиск по сайту</a>
+          <a class="main-nav__link  main-nav__link--search" href="#">Поиск по сайту
+            <svg class="main-nav__svg  main-nav__svg--search" width="18" height="18">
+              <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </a>
         </li>
         <li class="main-nav__item  main-nav__item--cart">
-          <a class="main-nav__link  main-nav__link--cart" href="#">Корзина: пока пуста</a>
+          <a class="main-nav__link  main-nav__link--cart" href="#">Корзина: пока пуста
+            <svg class="main-nav__svg  main-nav__svg--cart" width="21" height="18">
+              <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#cart"></use>
+            </svg>
+          </a>
         </li>
         <li class="main-nav__item  main-nav__item--desktop">
           <a class="main-nav__link  main-nav__link--desktop" href="#">Новые поступления</a>
@@ -49,7 +64,11 @@
       <div class="catalog__wrapper">
         <article class="catalog-item">
           <a class="catalog-item__link" href="#">
-            <img src="img/photo-1-mobile@1x.jpg" alt="" width="260" height="195">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-1-desktop@1x.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-1-tablet@1x.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+              <img src="img/photo-1-mobile@1x.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
           </a>
           <div class="catalog-item__description">
             <div class="catalog-item__description-header">
@@ -58,14 +77,22 @@
             </div>
             <div class="catalog-item__description-footer">
               <span class="catalog-item__price">1 200 руб.</span>
-              <a class="catalog-item__buy" href="#">Добавить в корзину</a>
+              <a class="catalog-item__buy" href="#">Добавить в корзину
+                <svg class="catalog-item__svg-cart" width="21" height="19">
+                  <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </article>
 
         <article class="catalog-item">
           <a class="catalog-item__link" href="#">
-            <img src="img/photo-2-mobile@1x.jpg" alt="" width="260" height="195">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-2-desktop@1x.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-2-tablet@1x.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+              <img src="img/photo-2-mobile@1x.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
           </a>
           <div class="catalog-item__description">
             <div class="catalog-item__description-header">
@@ -74,14 +101,22 @@
             </div>
             <div class="catalog-item__description-footer">
               <span class="catalog-item__price">690 руб.</span>
-              <a class="catalog-item__buy" href="#">Добавить в корзину</a>
+              <a class="catalog-item__buy" href="#">Добавить в корзину
+                <svg class="catalog-item__svg-cart" width="21" height="19">
+                  <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+              </a>
             </div>
           </div>
         </article>
 
         <article class="catalog-item">
           <a class="catalog-item__link" href="#">
-            <img src="img/photo-3-mobile@1x.jpg" alt="" width="260" height="195">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/photo-3-desktop@1x.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-3-tablet@1x.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+              <img src="img/photo-3-mobile@1x.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+            </picture>
           </a>
           <div class="catalog-item__description">
             <div class="catalog-item__description-header">
@@ -90,7 +125,11 @@
             </div>
             <div class="catalog-item__description-footer">
               <span class="catalog-item__price">1 500 руб.</span>
-              <a class="catalog-item__buy" href="#">Добавить в корзину</a>
+              <button class="catalog-item__buy" href="#">Добавить в корзину
+                <svg class="catalog-item__svg-cart" width="21" height="19">
+                  <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#cart"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </article>
@@ -98,36 +137,61 @@
     </section>
 
     <section class="production">
-      <div class="production__wrapper">
+      <div class="production__header">
         <h2 class="production__title">Процесс производства</h2>
-        <div class="production__video">
-          <video preload="metadata" poster="img/video-mobile@1x.jpg"></video>
-          <button class="production__play" type="button">
-            <img src="img/icon-play.svg" alt="">
-          </button>
-        </div>
-        <div class="production__description">
-          <p class="production__text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
-          </p>
-          <a class="production__btn  btn" href="form.html">Сделать заказ</a>
-        </div>
+        <svg class="production__svg-video" width="32" height="22">
+          <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#video"></use>
+        </svg>
+      </div>
+      <div class="production__video">
+        <picture>
+          <source media="(min-width: 1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Вязаные корзинки">
+        </picture>
+        <button class="production__play" type="button">
+          <svg class="production__svg-play" width="101" height="78">
+            <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#play"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="production__description">
+        <p class="production__text">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="production__btn  btn" href="form.html">Сделать заказ</a>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
     <a class="logo logo--footer" href="index.html">
-      <img src="img/logo-mobile.svg" alt="Логотип 'Mishka'" width="86" height="35">
+      <svg class="logo__svg" width="102" height="34">
+        <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#logo-footer"></use>
+      </svg>
     </a>
     <p class="social">
-      <a class="social__link  social__link--inst" href="#">Мы в итстаграмме</a>
-      <a class="social__link  social__link--fb" href="#">Мы в Фейсбуке</a>
-      <a class="social__link  social__link--tw" href="#">Мы в Вконтакте</a>
+      <a class="social__link" href="#">Мы в Итстаграмме
+        <svg class="social__svg  social__svg--inst" width="22" height="24">
+          <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#inst"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">Мы в Фейсбуке
+        <svg class="social__svg  social__svg--fb" width="15" height="29">
+          <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#fb"></use>
+        </svg>
+      </a>
+      <a class="social__link" href="#">Мы в Твитере
+        <svg class="social__svg  social__svg--tw" width="24" height="20">
+          <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#tw"></use>
+        </svg>
+      </a>
     </p>
     <a class="page-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span>Разработано</span>
-      <img src="http://placehold.it/27x34" width="27" height="34" alt="">
+      <svg class="page-footer__svg-copyright" width="27" height="34">
+        <use xmlns:xlink="https://www.w3.org/2000/xlink" xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+      </svg>
     </a>
   </footer>
 

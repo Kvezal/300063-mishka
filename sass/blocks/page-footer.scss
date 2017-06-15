@@ -29,6 +29,10 @@
   }
 }
 
+.page-footer__svg-copyright {
+  margin-top: 3px;
+}
+
 @media #{$tablet-widths} {
   .page-footer {
     flex-direction: row;

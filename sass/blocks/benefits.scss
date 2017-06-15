@@ -23,71 +23,39 @@
   min-height: 100px;
   margin-bottom: 18px;
   padding-top: 65px;
+}
 
-  &::after {
-    @include absolute-pseudo-element();
-
-    background-color: #ff8800;
-  }
+.benefits__svg {
+  position: absolute;
 
   &--flower {
-    &::after {
-      top: 10px;
-      left: 8px;
-
-      width: 33px;
-      height: 38px;
-    }
+    top: 10px;
+    left: 8px;
   }
 
   &--cash {
-    &::after {
-      top: 12px;
-      left: 0;
-
-      width: 47px;
-      height: 27px;
-    }
+    top: 12px;
+    left: 0
   }
 
   &--heart {
-    &::after {
-      top: 17px;
-      left: 7px;
-
-      width: 34px;
-      height: 27px;
-    }
+    top: 17px;
+    left: 7px;
   }
 
   &--clew {
-    &::after {
       top: 14px;
       left: 3px;
-
-      width: 35px;
-      height: 34px;
-    }
   }
 
   &--rocket {
-    &::after {
-      top: 15px;
-      left: -6px;
-
-      width: 55px;
-      height: 23px;
-    }
+    top: 15px;
+    left: -6px;
   }
 
   &--present {
-    &::after {
-      top: 13px;
-      left: 3px;
-
-      width: 33px;
-      height: 32px;
-    }
+    top: 13px;
+    left: 3px;
   }
 }
 

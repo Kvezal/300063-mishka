@@ -1,6 +1,6 @@
 .social {
-  display: flex;
-  justify-content: center;
+  @include center();
+
   box-sizing: border-box;
   height: 80px;
   margin: 0;
@@ -14,23 +14,6 @@
   margin-left: 20px;
 
   font-size: 0;
-
-  background-color: #ff8800;
-
-  &--inst {
-    width: 22px;
-    height: 21px;
-  }
-
-  &--fb {
-    width: 15px;
-    height: 29px;
-  }
-
-  &--tw {
-    width: 24px;
-    height: 20px;
-  }
 }
 
 @media #{$tablet-widths} {

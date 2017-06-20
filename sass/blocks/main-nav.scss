@@ -153,7 +153,8 @@
 
   margin-left: -44px;
 
-  background-color: #ff8800;
+  fill: transparentize($secondary-color, .8);
+  transition-duration: .2s;
 }
 
 .main-nav__link {
@@ -171,6 +172,10 @@
 
   &:active {
     color: $secondary-color-active;
+  }
+
+  &:active .main-nav__svg {
+    fill: transparentize($fifteenth-color, .8);
   }
 }
 
@@ -355,6 +360,14 @@
       padding: 0;
       margin-top: 18px;
       margin-right: 62px;
+    }
+
+    &:hover .main-nav__svg {
+      fill: $fifteenth-color;
+    }
+
+    &:active .main-nav__svg {
+      fill: transparentize($fifteenth-color, .8);
     }
   }
 }

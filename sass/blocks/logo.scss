@@ -33,8 +33,17 @@
       display: block;
       margin: 0;
       margin-top: -5px;
+
+      &[href]:active .logo__svg  {
+        fill: $nineteenth-color;
+      }
     }
   }
+
+  .logo__svg {
+    transition-duration: .2s;
+  }
+
 }
 
 @media #{$desktop-widths} {
@@ -46,19 +55,31 @@
     margin-left: 42px;
     margin-bottom: 0;
 
-    &--footer {
-      width: 185px;
-      height: auto;
-      margin: 0;
-      margin-top: -5px;
-    }
-
     &[href]:hover {
       opacity: .6;
     }
 
     &[href]:active {
       opacity: .3;
+    }
+
+    &--footer {
+      width: 185px;
+      height: auto;
+      margin: 0;
+      margin-top: -5px;
+
+      &[href]:hover {
+        opacity: 1;
+
+        & .logo__svg {
+          fill: $nineteenth-color;
+        }
+      }
+
+      &[href]:active {
+        opacity: .3;
+      }
     }
   }
 }

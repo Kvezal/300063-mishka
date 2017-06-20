@@ -24,8 +24,8 @@
 
   transition-duration: .15s;
 
-  img {
-    flex-shrink: 0;
+  &:active .categories__svg {
+    fill: transparentize($eighteenth-color, .7);
   }
 
   &--interior {
@@ -70,6 +70,12 @@
     margin-right: 27px;
     margin-bottom: 5px;
   }
+}
+
+.categories__svg {
+  fill: transparentize($eighteenth-color, 0.5);
+
+  transition-duration: .2s;
 }
 
 @media #{$tablet-widths} {
@@ -143,6 +149,14 @@
 
   .categories__link {
     width: 525px;
+
+    &:hover .categories__svg {
+      fill: transparentize($eighteenth-color, .3);
+    }
+
+    &:active .categories__svg {
+      fill: transparentize($eighteenth-color, .7);
+    }
 
     &--interior {
       padding-left: 37px;

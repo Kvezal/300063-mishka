@@ -9,6 +9,7 @@
 
   &--nojs {
     overflow: visible;
+    height: auto;
   }
 
   &--open {
@@ -99,6 +100,7 @@
   //border-right: 1px solid $third-color;
   //border-left: 1px solid $third-color;
   &--nojs {
+    position: static;
     height: auto;
   }
 }
@@ -110,35 +112,10 @@
 
   &--search {
     position: relative;
-
-    /*&::after {
-      @include absolute-pseudo-element();
-
-      top: 31px;
-      left: 23%;
-
-      width: 18px;
-      height: 19px;
-      margin-left: -43px;
-
-      background-color: #ff8800;
-    }*/
   }
+
   &--cart {
     position: relative;
-
-    /*&::after {
-      @include absolute-pseudo-element();
-
-      top: 31px;
-      left: 23%;
-
-      width: 21px;
-      height: 18px;
-      margin-left: -44px;
-
-      background-color: #ff8800;
-    }*/
   }
 
   &--desktop {

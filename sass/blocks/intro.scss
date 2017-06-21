@@ -17,6 +17,10 @@
       background-image: url(../img/hero-mobile@2x.jpg);
     }
   }
+
+  &--nojs {
+    border-top-color: transparent;
+  }
 }
 
 .intro__text {

@@ -1,6 +1,6 @@
-.benefits__wrapper {
+.benefits {
   box-sizing: border-box;
-  width: 100%;
+  margin: auto;
   padding-right: 9.4%;
   padding-left: 9.3%;
 }
@@ -8,6 +8,7 @@
 .benefits__title {
   @include font-set(700, 25px, 30px);
   margin-top: 27px;
+  margin-left: -2px;
 }
 
 .benefits__list {
@@ -62,10 +63,8 @@
 
 @media #{$tablet-widths} {
   .benefits {
-    @include center();
-  }
+    @imclude margin-center();
 
-  .benefits__wrapper {
     flex-direction: column;
     width: 668px;
     padding-right: 0;
@@ -116,7 +115,7 @@
 }
 
 @media #{$desktop-widths} {
-  .benefits__wrapper {
+  .benefits {
     width: 700px;
     padding-bottom: 44px;
   }

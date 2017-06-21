@@ -88,11 +88,11 @@
 
     &::after {
       @include absolute-pseudo-element();
-      bottom: 0px;
+      bottom: -1px;
       left: 0;
 
       width: 100%;
-      height: 12px;
+      height: 13px;
 
       background-image: url(../img/bg-zigzag-fill.svg);
       background-repeat: repeat-x;

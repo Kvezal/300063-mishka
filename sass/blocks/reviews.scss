@@ -216,6 +216,8 @@
     width: 167px;
     margin-top: -55px;
     margin-left: auto;
+
+    border: none;
   }
 
   .reviews__toggle {
@@ -232,6 +234,8 @@
     }
 
     &--next {
+      border-left: none;
+
       &::after {
         transform: translate(0px, -50%) rotate(45deg);
       }

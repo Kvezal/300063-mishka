@@ -23,7 +23,7 @@
 
 @media #{$desktop-widths} {
   .catalog {
-    @include center();
+    width: 100%;
 
     padding-top: 76px;
     padding-right: 0;
@@ -33,6 +33,7 @@
 
   .catalog__wrapper {
     @include center();
+    @include margin-center();
 
     flex-wrap: wrap;
     align-items: stretch;

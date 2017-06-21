@@ -8,13 +8,14 @@ var catalogItemsBuy = document.querySelectorAll('.catalog-item__buy');
 var modal = document.querySelector('.modal');
 var overlay = document.querySelector('.overlay')
 var modalBtns = document.querySelectorAll('.modal__btn');
-
+var intro = document.querySelector('.intro--nojs');
 
 
 //Блок главного меню
 toggleMenu.classList.remove('main-nav__toggle--nojs');
 mainNav.classList.remove('main-nav--nojs');
 menuList.classList.remove('main-nav__list--nojs');
+intro.classList.remove('intro--nojs');
 
 toggleMenu.addEventListener('click', function(event) {
   event.preventDefault();
@@ -70,3 +71,26 @@ function hideModal() {
     overlay.classList.remove('overlay--active');
   }
 }
+
+
+
+//Блок Яндекс карты
+ymaps.ready(function() {
+  var myMap = new ymaps.Map('map', {
+      center: [59.938536, 30.3224549],
+      zoom: 16
+    }, {
+      searchControlProvider: 'yandex#search'
+    }),
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'Mishka',
+      balloonContent: 'С нашими изделиями, тепло и любовь доступны каждому'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/map-pin.svg',
+      iconImageSize: [67, 100],
+      iconImageOffset: [-28, -100]
+    });
+  myMap.behaviors.disable('scrollZoom');
+  myMap.geoObjects.add(myPlacemark);
+});

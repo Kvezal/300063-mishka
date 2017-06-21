@@ -241,6 +241,8 @@
 .order-form__svg {
   position: absolute;
 
+  fill: transparentize($secondary-color, .8);
+
   transition-duration: .2s;
 
   &--tel {
@@ -545,6 +547,7 @@
   }
 
   .order-form__title {
+    display: block;
     box-sizing: border-box;
     width: 175px;
     padding-right: 10px;

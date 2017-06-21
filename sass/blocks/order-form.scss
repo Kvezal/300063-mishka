@@ -36,7 +36,7 @@
 .order-form__title {
   @include font(17px, 17px);
 
-  position: relative;
+  display: flex;
   margin: 0;
   margin-left: -2px;
   margin-bottom: 34px;
@@ -44,38 +44,60 @@
   color: $fifth-color;
   text-transform: uppercase;
 
-  &::before {
-    @include absolute-pseudo-element();
-
-    top: 8px;
-    right: 0;
+  &::after {
+    content: "";
     z-index: -1;
 
-    width: 76%;
+    flex-grow: 1;
+    align-self: center;
     height: 1px;
 
     background-color: $fifth-color;
   }
 
+  &--type {
+    &:after {
+      margin-left: 27px;
+    }
+  }
+
+  &--color {
+    &:after {
+      margin-left: 20px;
+    }
+  }
+
   &--name {
     margin-bottom: 28px;
+
+    &:after {
+      margin-left: 21px;
+    }
   }
 
   &--tel {
     margin-bottom: 7px;
+
+    &:after {
+      margin-left: 31px;
+    }
   }
 
   &--email {
     margin-top: 10px;
     margin-bottom: 7px;
 
-    &::before {
-      width: 69%;
+    &:after {
+      margin-left: 24px;
     }
   }
 
   &--addit {
     margin-bottom: 25px;
+
+    &:after {
+      margin-left: 24px;
+    }
   }
 }
 
@@ -144,6 +166,8 @@
     border: 2px solid $primary-color;
     border-top: none;
     border-right: none;
+    border-top-color: transparent;
+    border-right-color: transparent;
     transform: rotate(-45deg);
   }
 }
@@ -208,10 +232,16 @@
   &:focus {
     border-bottom: 2px solid $seventh-color;
   }
+
+  &:focus + .order-form__svg {
+    fill: $twelfth-color;
+  }
 }
 
 .order-form__svg {
   position: absolute;
+
+  transition-duration: .2s;
 
   &--tel {
     top: 35px;
@@ -337,7 +367,7 @@
       margin-top: 16px;
     }
 
-    &::before {
+    &::after {
       display: none;
     }
   }
@@ -476,6 +506,7 @@
 
   .order-form__btn {
     width: 230px;
+    padding: 0;
   }
 }
 
@@ -609,6 +640,10 @@
 
     &:hover {
       border-bottom: 2px solid $seventh-color;
+    }
+
+    &:hover + .order-form__svg {
+      fill: $twelfth-color;
     }
   }
 

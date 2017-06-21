@@ -20,7 +20,7 @@
   transition-duration: .15s;
 
   &:active {
-    color: $eighth-color-active;
+    color: transparentize($eighth-color, .7);
 
     background-color: $primary-color;
   }
@@ -43,7 +43,7 @@
     }
 
     &:active {
-      color: $eighth-color-active;
+      color: transparentize($eighth-color, .7);
 
       background-color: $primary-color;
     }

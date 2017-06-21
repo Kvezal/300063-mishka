@@ -45,8 +45,8 @@
   transition-duration: .15s;
 
   &:active {
-    color: $seventh-color-active;
-    border-color: $seventh-color-active;
+    color: transparentize($seventh-color, .7);
+    border-color: transparentize($seventh-color, .7);
   }
 }
 
@@ -238,8 +238,8 @@
     }
 
     &:active {
-      color: $seventh-color-active;
-      border-color: $seventh-color-active;
+      color: transparentize($seventh-color, .7);
+      border-color: transparentize($seventh-color, .7);
     }
   }
 

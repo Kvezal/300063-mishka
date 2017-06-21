@@ -37,7 +37,7 @@
     &:active {
       padding-bottom: 5px;
 
-      color: $eighth-color-active;
+      color: transparentize($eighth-color, .7);
 
       box-shadow: 0 -5px $fifth-color;
     }
@@ -52,7 +52,7 @@
     &:active {
       padding-bottom: 5px;
 
-      color: $eighth-color-active;
+      color: transparentize($eighth-color, .7);
 
       box-shadow: 0 -5px $sixth-color;
     }

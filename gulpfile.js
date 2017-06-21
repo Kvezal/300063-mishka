@@ -17,7 +17,6 @@ var jsmin = require("gulp-jsmin");
 var del = require("del");
 var run = require("run-sequence");
 
-
 gulp.task("style", function() {
   return gulp.src("sass/style.scss")
     .pipe(plumber())

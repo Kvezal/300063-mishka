@@ -38,7 +38,7 @@
   transition-duration: .15s;
 
   &:active {
-    color: $secondary-color-active;
+    color: transparentize($secondary-color, .7);
   }
 }
 
@@ -168,11 +168,11 @@
 
   .catalog-item__name {
     &:hover {
-      color: $secondary-color-hover;
+      color: transparentize($secondary-color, .4);
     }
 
     &:active {
-      color: $secondary-color-active;
+      color: transparentize($secondary-color, .7);
     }
   }
 

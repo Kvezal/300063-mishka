@@ -17,6 +17,10 @@
       background-image: url(../img/hero-mobile@2x.jpg);
     }
   }
+
+  &--nojs {
+    border-top-color: transparent;
+  }
 }
 
 .intro__text {
@@ -71,7 +75,6 @@
     padding-top: 17px;
     padding-right: 50px;
     padding-left: 425px;
-
 
     text-align: right;
 

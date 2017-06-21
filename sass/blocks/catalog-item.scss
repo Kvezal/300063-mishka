@@ -38,7 +38,7 @@
   transition-duration: .15s;
 
   &:active {
-    color: $secondary-color-active;
+    color: transparentize($secondary-color, .7);
   }
 }
 
@@ -72,11 +72,20 @@
   margin-top: 1px;
 
   border: 0;
+  background-color: transparent;
 }
 
 .catalog-item__svg-cart {
   padding: 0;
   margin: 0;
+
+  fill: transparentize($secondary-color, .8);
+
+  transition-duration: .2s;
+
+  &:active {
+    fill: transparentize($fifteenth-color, .7);
+  }
 }
 
 @media #{$tablet-widths} {
@@ -159,11 +168,11 @@
 
   .catalog-item__name {
     &:hover {
-      color: $secondary-color-hover;
+      color: transparentize($secondary-color, .4);
     }
 
     &:active {
-      color: $secondary-color-active;
+      color: transparentize($secondary-color, .7);
     }
   }
 
@@ -177,6 +186,18 @@
 
   .catalog-item__buy {
     margin-right: 6px;
+
+    cursor: pointer;
+  }
+
+  .catalog-item__svg-cart {
+    &:hover {
+      fill: $fifteenth-color;
+    }
+
+    &:active {
+      fill: transparentize($fifteenth-color, .7);
+    }
   }
 }
 

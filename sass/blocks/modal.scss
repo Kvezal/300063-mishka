@@ -101,9 +101,13 @@
   .modal__title {
     @include font(30px, 57px);
 
-    text-transform: uppercase;
-
     width: 100%;
+
+    text-transform: uppercase;
+  }
+
+  .modal__btn {
+    padding: 0;
   }
 }
 

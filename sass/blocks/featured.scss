@@ -186,6 +186,10 @@
 
     margin-bottom: 34px;
   }
+
+  .featured__btn {
+    padding-top: 0;
+  }
 }
 
 @media #{$desktop-widths} {
@@ -241,10 +245,6 @@
     padding-right: 50px;
   }
 
-  .featured__text {
-    //margin-top: -478px;
-  }
-
   .featured__table {
     margin-top: 48px;
     margin-left: -1px;
@@ -253,7 +253,6 @@
   .featured__image {
     width: 525px;
     height: 636px;
-    //margin-left: 350px;
   }
 
   .featured__bottom {

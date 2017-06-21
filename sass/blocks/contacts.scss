@@ -45,8 +45,8 @@
   transition-duration: .15s;
 
   &:active {
-    color: $seventh-color-active;
-    border-color: $seventh-color-active;
+    color: transparentize($seventh-color, .7);
+    border-color: transparentize($seventh-color, .7);
   }
 }
 
@@ -66,15 +66,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 320px auto;
-
-  @media #{$retina} {
-    background-image: url(../img/map-mobile@2x.jpg);
-  }
 }
 
 .contacts__btn {
   @include margin-center();
   width: 81%;
+}
+
+/*
+Блок с media (min-width: 320зч) необходим для корректной работы mqpacker-а,
+иные способы(sort: false(true) и отсутствие опции сортировки) не помогают при
+сортировке медиа выражений, проблема видна при просмотре изображений на
+ретине 2х для карты при не рабочем js
+*/
+@media (min-width: 0px) {
+  @media #{$retina} {
+    .contacts__map {
+      background-image: url(../img/map-mobile@2x.jpg);
+    }
+  }
 }
 
 @media #{$tablet-widths} {
@@ -228,8 +238,8 @@
     }
 
     &:active {
-      color: $seventh-color-active;
-      border-color: $seventh-color-active;
+      color: transparentize($seventh-color, .7);
+      border-color: transparentize($seventh-color, .7);
     }
   }
 

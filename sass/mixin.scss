@@ -1,6 +1,6 @@
 @mixin absolute-pseudo-element() {
-    content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 }
 
 @mixin clear-list() {

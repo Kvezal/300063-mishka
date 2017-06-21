@@ -24,13 +24,23 @@
   border: none;
   border-top: 1px solid $tenth-color;
 
+  transition-duration: .2s;
+
   span {
     margin-right: 28px;
+  }
+
+  &:active {
+    opacity: .3;
   }
 }
 
 .page-footer__svg-copyright {
   margin-top: 3px;
+
+  fill: $fifteenth-color;
+
+  transition-duration: .2s;
 }
 
 @media #{$tablet-widths} {
@@ -50,11 +60,12 @@
 
     border: none;
   }
-}/*
+}
 
 @media #{$desktop-widths} {
-  .page-footer {
-    padding-right: 100px;
-    padding-left: 100px;
+  .page-footer__copyright {
+    &:hover .page-footer__svg-copyright {
+      fill: $nineteenth-color;
+    }
   }
-}*/
+}

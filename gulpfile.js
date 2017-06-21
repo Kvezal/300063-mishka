@@ -8,7 +8,6 @@ var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
 var mqpacker = require("css-mqpacker");
 var csscomb = require("gulp-csscomb");
-//var minify = require("gulp-csso");
 var minify = require("gulp-cssnano");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
@@ -20,12 +19,15 @@ var run = require("run-sequence");
 
 
 gulp.task("style", function() {
-  gulp.src("sass/style.scss")
+  return gulp.src("sass/style.scss")
     .pipe(plumber())
-    .pipe(sass())
+    .pipe(sass().on("error", sass.logError))
     .pipe(postcss([
       autoprefixer({browsers: [
-        "last 2 versions"
+        "last 2 versions",
+        "safari >= 6",
+        "ios >= 7",
+        "ie >= 10"
       ]}),
       mqpacker({
         sort: true
@@ -46,7 +48,6 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.scss", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
   gulp.watch("*.html", ["html:update"]);
 });
 

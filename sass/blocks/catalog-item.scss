@@ -79,6 +79,8 @@
   padding: 0;
   margin: 0;
 
+  fill: transparentize($secondary-color, .8);
+
   transition-duration: .2s;
 
   &:active {

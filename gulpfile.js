@@ -31,7 +31,7 @@ gulp.task("style", function() {
         sort: true
       })
     ]))
-    //.pipe(csscomb())
+    .pipe(csscomb())
     .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))

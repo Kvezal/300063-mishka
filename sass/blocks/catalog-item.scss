@@ -72,11 +72,18 @@
   margin-top: 1px;
 
   border: 0;
+  background-color: transparent;
 }
 
 .catalog-item__svg-cart {
   padding: 0;
   margin: 0;
+
+  transition-duration: .2s;
+
+  &:active {
+    fill: transparentize($fifteenth-color, .7);
+  }
 }
 
 @media #{$tablet-widths} {
@@ -177,6 +184,18 @@
 
   .catalog-item__buy {
     margin-right: 6px;
+
+    cursor: pointer;
+  }
+
+  .catalog-item__svg-cart {
+    &:hover {
+      fill: $fifteenth-color;
+    }
+
+    &:active {
+      fill: transparentize($fifteenth-color, .7);
+    }
   }
 }
 

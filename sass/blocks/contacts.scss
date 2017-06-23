@@ -25,6 +25,7 @@
 
 .contacts__item {
   display: flex;
+  align-items: flex-start;
   margin-top: 26px;
 
   &--address {
@@ -33,10 +34,13 @@
 }
 
 .contacts__field {
+  max-width: 100px;
   padding-right: 31px;
 }
 
 .contacts__link {
+  max-width: 290px;
+
   color: $primary-color;
   text-decoration: none;
 
@@ -161,6 +165,7 @@
 
   .contacts__link {
     display: table-cell;
+    max-width: 535px;
   }
 
   .contacts__text {
@@ -220,7 +225,7 @@
 
   .contacts__inner {
     flex-direction: column;
-    width: 50%;
+    width: 40%;
     margin-bottom: 79px;
     margin-left: 0;
   }
@@ -232,6 +237,8 @@
   }
 
   .contacts__link {
+    max-width: 210px;
+
     &:hover {
       color: $seventh-color;
       border-color: $seventh-color;
@@ -243,7 +250,12 @@
     }
   }
 
+  .contacts__text {
+    max-width: 230px;
+  }
+
   .contacts__field {
+    max-width: 80px;
     padding-right: 26px;
   }
 

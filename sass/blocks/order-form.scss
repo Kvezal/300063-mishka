@@ -438,10 +438,6 @@
     @include font(19px, 19px);
 
     padding-right: 25px;
-
-    &--patronym {
-      padding-right: 33px;
-    }
   }
 
   .order-form__input {
@@ -543,7 +539,12 @@
   }
 
   .order-form__wrapper {
+    box-sizing: border-box;
     width: 1050px;
+
+    &--contacts {
+      padding-right: 175px;
+    }
   }
 
   .order-form__title {
@@ -571,7 +572,12 @@
   }
 
   .order-form__group {
+    box-sizing: border-box;
     width: 875px;
+
+    &--name {
+      padding-right: 174px;
+    }
   }
 
   .order-form__label-radio {
@@ -612,10 +618,6 @@
     padding-left: 2px;
 
     cursor: pointer;
-
-    &--patronym {
-      padding-right: 33px;
-    }
   }
 
   .order-form__input {
@@ -626,7 +628,6 @@
     width: 500px;
     height: 52px;
     margin-top: -16px;
-    margin-right: 175px;
     margin-bottom: 40px;
     padding-left: 17px;
 

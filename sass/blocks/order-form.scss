@@ -358,9 +358,6 @@
   .order-form__title {
     width: 166px;
 
-    &--tel {
-    }
-
     &--email {
       margin-top: 0;
     }
@@ -623,7 +620,6 @@
   .order-form__input {
     @include font(19px, 19px);
 
-    flex-grow: 1;
     box-sizing: border-box;
     width: 500px;
     height: 52px;
@@ -633,13 +629,16 @@
 
     background-color: transparent;
 
+    &--name, &--surname, &--patronym {
+      width: 570px;
+    }
+
     &--tel {
       width: 700px;
-
     }
 
     &--email {
-      width: 500px;
+      width: 700px;
     }
 
     &:hover {

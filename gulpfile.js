@@ -13,9 +13,11 @@ var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
 var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
-var jsmin = require("gulp-jsmin");
+var uglify = require('gulp-uglify');
+var pump = require('pump');
 var del = require("del");
 var run = require("run-sequence");
+var ghPages = require('gulp-gh-pages');
 
 gulp.task("style", function() {
   return gulp.src("sass/style.scss")
@@ -99,21 +101,37 @@ gulp.task("html:update", ["html:copy"], function(done) {
   done();
 });
 
-gulp.task("js:copy", function() {
-  return gulp.src("js/scripts.js")
-    .pipe(gulp.dest("build/js"))
-    .pipe(jsmin())
-    .pipe(rename("scripts.min.js"))
-    .pipe(gulp.dest("build/js"));
+gulp.task('js:copy', function () {
+  pump([
+    gulp.src('js/**.js'),
+    gulp.dest('build/js')
+  ]);
 });
 
-gulp.task("js:update", ["js:copy"], function(done) {
+gulp.task('js:update', ['js:copy', 'compress'], function (done) {
   server.reload();
   done();
 });
 
+gulp.task('compress', function (callback) {
+  pump([
+    gulp.src('js/*.js'),
+    uglify(),
+    rename({suffix: '.min'}),
+    gulp.dest('build/js-min'),
+  ],
+      callback
+  );
+});
+
 gulp.task("clean", function() {
   return del("build");
+});
+
+gulp.task('deploy', function () {
+  del('.publich');
+  return gulp.src('build/**/*')
+    .pipe(ghPages());
 });
 
 gulp.task("build", function(callback) {
@@ -121,7 +139,7 @@ gulp.task("build", function(callback) {
     "clean",
     "copy",
     "style",
-    "js",
+    "compress",
     "image",
     "sprite",
     callback
